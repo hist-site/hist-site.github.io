@@ -148,7 +148,7 @@ li {
   width: 150px;
   height: 150px;
   position: fixed;
-  bottom: 35px;
+  bottom: 220px;
   right: 30px;
   text-align: center;
   cursor: pointer;
@@ -198,4 +198,106 @@ li {
   40%{box-shadow: 0 0 0 20px rgba(255, 255, 255, .0), 0 0 0 0 rgba(255, 255, 255, .0);;}
   80%{box-shadow: 0 0 0 20px rgba(255, 255, 255, .0), 0 0 0 13px rgba(255, 255, 255, .0);;}
   100%{box-shadow: 0 0 0 0 rgba(255, 255, 255, .0), 0 0 0 13px rgba(255, 255, 255, .0);;}
+}
+
+
+
+.menu-btn {
+    background: #b646f0;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 25px;
+    animation: animate 2s linear infinite;
+    z-index: 99;
+}
+
+.menu-block {
+  display: flex;
+  bottom: 220px;
+  right: 30px;
+}
+.menu-nav {
+  background-color: #fff;
+  height: 50px;
+  
+}
+.menu-nav__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #f9fbf3;
+  margin-right: 20px;
+}
+.menu-nav__link {
+  transition: 0.5s;
+  transform-origin: right center;
+  transform: translateX(50%);
+  opacity: 0;
+}
+.menu-nav__link_active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.menu-block {
+  position: relative;
+}
+.menu a {
+  background: #b646f0;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  bottom: 45px;
+  right: 35px;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 30px;
+  z-index: 0;
+  transition: 1s;
+  color: #f9fbf3;
+  font-size: 45px;
+  text-decoration-line: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 550;
+}
+.menu a:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.menu a:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.menu a:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.menu a:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.menu a:nth-child(5) {
+  transition-delay: 0.5s;
+}
+
+.menu_active a:nth-child(1) {
+  transform: translate(-140%, 0%);
+}
+.menu_active a:nth-child(2) {
+  transform: translate(-250%, 0%); /* 120 */
+}
+.menu_active a:nth-child(3) {
+  transform: translate(-360%, 0%); /* 120 */
+}
+.menu_active a:nth-child(4) {
+  transform: translate(-470%, 0%); /* 120 */
+}
+.menu_active a:nth-child(5) {
+  transform: translate(-580%, 0%); /* 120 */
+}
+
+
+.fab,.fas{
+  font-size: 25px;
 }

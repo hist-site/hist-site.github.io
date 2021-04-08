@@ -138,14 +138,23 @@ document.querySelector(".menu-btn-off").addEventListener("click", () => {
   document.querySelector(".wrapper-time").classList.remove('wrapper-time_active');
   document.querySelector(".wrapper").classList.remove('wrapper_active');
 });
-
-
-document.querySelector(".prev").addEventListener("click", () => {
-  date = new Date(date.getFullYear(), date.getMonth(), (date.getDate()-1));
-  renderDayBook();
+document.querySelector(".menu-btn").addEventListener("click", () => {
+  document.querySelector(".menu-btn").classList.add('menu-btn_active');
+  document.querySelector(".menu").classList.add('menu_active');
+});
+document.querySelector(".menu-btn-off").addEventListener("click", () => {
+  document.querySelector(".wrapper-time").classList.remove('wrapper-time_active');
+  document.querySelector(".wrapper").classList.remove('wrapper_active');
 });
 
-document.querySelector(".next").addEventListener("click", () => {
-  date = new Date(date.getFullYear(), date.getMonth(), (date.getDate()+1));
-  renderDayBook();
-});
+
+
+// document.querySelector(".prev").addEventListener("click", () => {
+//   date = new Date(date.getFullYear(), date.getMonth(), (date.getDate()-1));
+//   renderDayBook();
+// });
+
+// document.querySelector(".next").addEventListener("click", () => {
+//   date = new Date(date.getFullYear(), date.getMonth(), (date.getDate()+1));
+//   renderDayBook();
+// });
