@@ -152,18 +152,17 @@ li {
   height: 150px;
   position: fixed;
   bottom: 35px;
-  right: 30px;
   text-align: center;
   cursor: pointer;
   padding-top: 25px;
   animation: animate 2s linear infinite;
-  transition: .7s;
-  transition-delay: 0.4s; 
+  right: 200px;
+  transition: 1.5s;
   transform: translateY(0%);
 }
 
 .menu-btn-on_active {
-  transform: translateY(-100%);
+  transform: translate(110%, -100%);
 }
 
 .menu-btn-off {
