@@ -33,10 +33,6 @@ li {
   width: 97%;
 }
 
-a {
-  outline: none;
-}
-
 .wrapper {
   width: 100%;
   height: 100%;
@@ -266,13 +262,6 @@ a {
 }
 
 .menu-btnOff {
-  background: #b646f0;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: fixed;
-  bottom: 35px;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -300,19 +289,19 @@ a {
 }
 
 .menu_active a:nth-child(1) {
-  transform: translate(-290%, -130%);
+  transform: translate(-260%, -130%);
 }
 .menu_active a:nth-child(2) {
-  transform: translate(-180%, -130%);
+  transform: translate(-150%, -130%);
 }
 .menu_active a:nth-child(3) {
-  transform: translate(-70%, -130%)
+  transform: translate(-40%, -130%)
 }
 .menu_active a:nth-child(4) {
-  transform: translate(40%, -130%);
+  transform: translate(70%, -130%);
 }
 .menu_active a:nth-child(5) {
-  transform: translate(150%, -130%);
+  transform: translate(180%, -130%);
 }
 .menu_active a:nth-child(6) {
   transform: translate(320%, -130%); /* 110 */
