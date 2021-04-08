@@ -140,11 +140,13 @@ document.querySelector(".menu-btn-off").addEventListener("click", () => {
   document.querySelector(".wrapper").classList.remove('wrapper_active');
 });
 document.querySelector(".menu-btnOn").addEventListener("click", () => {
+  document.querySelector('.menu-btn-on').classList.add('menu-btn-on_active');
   document.querySelector('.menu-btnOn').classList.add('menu-btnOn_active');
   document.querySelector(".menu").classList.add('menu_active');
 });
 document.querySelector(".menu-btnOff").addEventListener("click", () => {
-    document.querySelector('.menu-btnOn').classList.remove('menu-btnOn_active');
+  document.querySelector('.menu-btnOn').classList.remove('menu-btnOn_active');
+  document.querySelector('.menu-btn-on').classList.remove('menu-btn-on_active');
   document.querySelector(".menu").classList.remove('menu_active');
 });
 
