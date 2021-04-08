@@ -285,19 +285,14 @@ li {
   transform: translate(-140%, 0%);
 }
 .menu_active a:nth-child(2) {
-  transform: translate(-250%, 0%); /* 120 */
+  transform: translate(-250%, 0%);
 }
 .menu_active a:nth-child(3) {
-  transform: translate(-360%, 0%); /* 120 */
+  transform: translate(-360%, 0%)
 }
 .menu_active a:nth-child(4) {
-  transform: translate(-470%, 0%); /* 120 */
+  transform: translate(-470%, 0%);
 }
 .menu_active a:nth-child(5) {
-  transform: translate(-580%, 0%); /* 120 */
-}
-
-
-.fab,.fas{
-  font-size: 25px;
+  transform: translate(-580%, 0%); /* 110 */
 }

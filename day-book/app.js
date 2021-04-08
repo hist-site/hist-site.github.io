@@ -1,5 +1,7 @@
 var date = new Date();
 
+const table = document.querySelector(".tables ol");
+const weekday = document.querySelector(".weekday h1");
 var clock = document.getElementById("clock");
 
 
@@ -16,50 +18,49 @@ var clock = document.getElementById("clock");
     }
   }
 
-const renderDayBook = () => {
-
-  document.querySelector(".weekday h1").innerHTML = week(date.getDay());
-  const table = document.querySelector(".tables ol");
-
   const monday = `<li>Фізика</li>
-		     		<li>Хімія</li>
-		     		<li>Історія У.</li>
-		     		<li>Зарубіжна</li>
-		     		<li>Алгебра</li>
-		     		<li>Англ-мова</li>
-		     		<li>Укр-літ</li>`;
+            <li>Хімія</li>
+            <li>Історія У.</li>
+            <li>Зарубіжна</li>
+            <li>Алгебра</li>
+            <li>Англ-мова</li>
+            <li>Укр-літ</li>`;
 
   const tuesday = `<li>З.У.</li>
-					<li>Фіз-ра</li>
-					<li>Фізика</li>
-					<li>Труди</li>
-			 		<li>Всесвітня</li>
-		     		<li>Укр-мова</li>
-		     		<li>Укр-літ</li>`;
+          <li>Фіз-ра</li>
+          <li>Фізика</li>
+          <li>Труди</li>
+          <li>Всесвітня</li>
+            <li>Укр-мова</li>
+            <li>Укр-літ</li>`;
 
   const wednesday = `<li>Інформатика</li>
-			    	<li>З.У.</li>
-			  		<li>Фіз-ра</li>
-		    		<li>Укр-мова</li>
-		     		<li>Фізика</li>
-		     		<li>Біологія</li>
-		    		<li>Біологія</li>`;
+            <li>З.У.</li>
+            <li>Фіз-ра</li>
+            <li>Укр-мова</li>
+            <li>Фізика</li>
+            <li>Біологія</li>
+            <li>Біологія</li>`;
 
   const thursday = `<li>Фіз-ра</li>
-		 			<li>Укр-мова</li>
-					<li>Укр-літ</li>
-					<li>Географія</li>
-					<li>Алгебра</li>
-					<li>Геометрія</li>`;
+          <li>Укр-мова</li>
+          <li>Укр-літ</li>
+          <li>Географія</li>
+          <li>Алгебра</li>
+          <li>Геометрія</li>`;
 
   const friday = `<li>Англ-мова</li>
-			 		  <li>Фізика</li>
-		     		<li>Нім-мова</li>
-		     		<li>Хімія</li>
-		     		<li>Укр-мова</li>
-		     		<li>Укр-літ</li>
-		     		<li>Інформатика</li>`;
+            <li>Фізика</li>
+            <li>Нім-мова</li>
+            <li>Хімія</li>
+            <li>Укр-мова</li>
+            <li>Укр-літ</li>
+            <li>Інформатика</li>`;
 
+
+const renderDayBook = () => {
+
+  weekday.innerHTML = week(date.getDay());
   if (date.getDay() == 1) {
   	table.innerHTML = monday;
   }
@@ -142,19 +143,29 @@ document.querySelector(".menu-btn").addEventListener("click", () => {
   document.querySelector(".menu-btn").classList.add('menu-btn_active');
   document.querySelector(".menu").classList.add('menu_active');
 });
-document.querySelector(".menu-btn-off").addEventListener("click", () => {
-  document.querySelector(".wrapper-time").classList.remove('wrapper-time_active');
-  document.querySelector(".wrapper").classList.remove('wrapper_active');
+// document.querySelector(".menu-btn").addEventListener("click", () => {
+//   document.querySelector(".menu-btn_active").classList.remove('menu-btn_active');
+//   document.querySelector(".menu_active").classList.remove('menu_active');
+// });
+
+
+document.querySelector(".monday").addEventListener("click", () => {
+  weekday.innerHTML = week(1);
+  table.innerHTML = monday;
 });
-
-
-
-// document.querySelector(".prev").addEventListener("click", () => {
-//   date = new Date(date.getFullYear(), date.getMonth(), (date.getDate()-1));
-//   renderDayBook();
-// });
-
-// document.querySelector(".next").addEventListener("click", () => {
-//   date = new Date(date.getFullYear(), date.getMonth(), (date.getDate()+1));
-//   renderDayBook();
-// });
+document.querySelector(".tuesday").addEventListener("click", () => {
+  weekday.innerHTML = week(2);
+  table.innerHTML = tuesday;
+});
+document.querySelector(".wednesday").addEventListener("click", () => {
+  weekday.innerHTML = week(3);
+  table.innerHTML = wednesday;
+});
+document.querySelector(".thursday").addEventListener("click", () => {
+  weekday.innerHTML = week(4);
+  table.innerHTML = thursday;
+});
+document.querySelector(".friday").addEventListener("click", () => {
+  weekday.innerHTML = week(5);
+  table.innerHTML = friday;
+});
