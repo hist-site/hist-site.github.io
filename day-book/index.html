@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<title>Щоденник</title>
+	<style>body{opacity: 0;overflow-x: hidden;}html{background: url(back-groung.png), #221126;}</style>
+</head>
+<body>
+    <div class="container">
+      <div class="day-book">
+      	<div class="days">
+      		<i class="fas fa-angle-left prev"></i>
+      			<div class="date"><h1></h1></div>
+      		<i class="fas fa-angle-right next"></i>
+      	</div>
+      	<div class="tables">
+      		<ol></ol>
+     	</div>
+      <a class="menu-btn-on">
+      	<i class="far fa-clock"></i>
+      </a>
+  	  </div>
+	</div>
+
+<div class="menu-time">
+		<div class="collumn-block--info">
+			<div class="menu-time-header"><h1>Розклад дзвінків</h1></div>
+			<div class="inner">
+				<div class="time"><h1 id="clock">00:00</h1></div>
+				<ol>
+					<li>8:00 - 8:45</li>
+				    <li>9:05 - 9:50</li>
+				    <li>10:10 - 10:55</li>
+				   	<li>11:15 - 12:00</li>
+				   	<li>12:20 - 13:05</li>
+			    	<li>13:20 - 14:00</li>
+			     	<li>14:15 - 14:55</li>
+	     		</ol>
+			</div>
+		</div>
+	<a class="menu-btn-off"><i class="fas fa-times"></i></a>
+</div>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script src="https://kit.fontawesome.com/034599bd01.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
