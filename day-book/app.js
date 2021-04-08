@@ -1,24 +1,9 @@
-$(function(){
-
-  $('.menu-btn-on').on('click', function(e) {
-    e.preventDefault();
-  $('.menu-time').toggleClass('menu-time_active');
-  $('.container').toggleClass('container_active');
-  });
-
-  $('.menu-btn-off').on('click', function(e) {
-    e.preventDefault();
-  $('.menu-time').toggleClass('menu-time_active');
-  $('.container').toggleClass('container_active');
-  });
-});
-
 var date = new Date();
 
 var clock = document.getElementById("clock");
 
 
-  var days = function (day) {
+  var week = function (day) {
     switch (day) {
       case 0: return"Неділя";
       case 1: return"Понеділок";
@@ -33,7 +18,7 @@ var clock = document.getElementById("clock");
 
 const renderDayBook = () => {
 
-  document.querySelector(".date h1").innerHTML = days(date.getDay());
+  document.querySelector(".weekday h1").innerHTML = week(date.getDay());
   const table = document.querySelector(".tables ol");
 
   const monday = `<li>Фізика</li>
@@ -91,7 +76,7 @@ const renderDayBook = () => {
   	table.innerHTML = friday;
   }
   else{
-    table.innerHTML = `<li style="list-style: none;">Вихідні, іди гуляй дурачок</li>`;
+    table.innerHTML = `<li style="list-style: none;">Вихідний день</li>`;
   }
 };
 renderDayBook();
@@ -144,6 +129,16 @@ function Clock() {
   clock.textContent = clockString;
 };
 setInterval(Clock, 500);
+
+document.querySelector(".menu-btn-on").addEventListener("click", () => {
+  document.querySelector(".wrapper-time").classList.add('wrapper-time_active');
+  document.querySelector(".wrapper").classList.add('wrapper_active');
+});
+document.querySelector(".menu-btn-off").addEventListener("click", () => {
+  document.querySelector(".wrapper-time").classList.remove('wrapper-time_active');
+  document.querySelector(".wrapper").classList.remove('wrapper_active');
+});
+
 
 document.querySelector(".prev").addEventListener("click", () => {
   date = new Date(date.getFullYear(), date.getMonth(), (date.getDate()-1));
