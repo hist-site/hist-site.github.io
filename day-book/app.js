@@ -139,14 +139,14 @@ document.querySelector(".menu-btn-off").addEventListener("click", () => {
   document.querySelector(".wrapper-time").classList.remove('wrapper-time_active');
   document.querySelector(".wrapper").classList.remove('wrapper_active');
 });
-document.querySelector(".menu-btn").addEventListener("click", () => {
-  document.querySelector(".menu-btn").classList.add('menu-btn_active');
+document.querySelector(".menu-btnOn").addEventListener("click", () => {
+  document.querySelector('.menu-btnOn').classList.add('menu-btnOn_active');
   document.querySelector(".menu").classList.add('menu_active');
 });
-// document.querySelector(".menu-btn").addEventListener("click", () => {
-//   document.querySelector(".menu-btn_active").classList.remove('menu-btn_active');
-//   document.querySelector(".menu_active").classList.remove('menu_active');
-// });
+document.querySelector(".menu-btnOff").addEventListener("click", () => {
+    document.querySelector('.menu-btnOn').classList.remove('menu-btnOn_active');
+  document.querySelector(".menu").classList.remove('menu_active');
+});
 
 
 document.querySelector(".monday").addEventListener("click", () => {
