@@ -2,8 +2,9 @@
 <html lang="ua">
 <head>
 	<meta charset="UTF-8"> <!-- Кодировка UTF-8 -->
+	<link rel="icon" href="src/img/favicon.webp"> <!-- Картинка WEB сторінки -->
 	<title>Щоденник</title>	<!-- Заголовак -->
-	<style>body{opacity: 0;overflow-x: hidden;}html{background: url(back-groung.webp), #221126;}</style> <!-- Стиль при загрузкі WEB сторінки -->
+	<style>body{opacity: 0;overflow-x: hidden;}html{background: url(src/img/back-groung.webp), #221126;}</style> <!-- Стиль при загрузкі WEB сторінки -->
 </head>
 <body>
 
@@ -27,21 +28,24 @@
       		<ol>
       			<!-- Js || Відправка розкладу за допомогою renderDayBook() -->
       		</ol>
-     		</div>
+     	</div>
 
-				<div class="menu-block">
-   				<a class="menu-btnOn"><i class="fas fa-calendar-week"></i></a>
-		    	<nav class="menu">
-			    	<a class="monday">Пн</a>
-			    	<a class="tuesday">Вт</a>
-			    	<a class="wednesday">Ср</a>
-			    	<a class="thursday">Чт</a>
-			      	<a class="friday">Пт</a>
-			      	<a class="menu-btnOff"><i class="fas fa-times"></i></a>
+     	<!-- Menu-block -->
+		<div class="menu-block">
+   			<a class="menu-btnOn"><i class="fas fa-calendar-week"></i></a> <!-- Кнопка відкриття меню -->
+		    <nav class="menu">
+			  	<a class="monday">Пн</a> <!-- Кнопка розкладу на понеділок -->
+			   	<a class="tuesday">Вт</a> <!-- Кнопка розкладу на вівторок -->
+			   	<a class="wednesday">Ср</a> <!-- Кнопка розкладу на середу -->
+			   	<a class="thursday">Чт</a> <!-- Кнопка розкладу на четвер -->
+			   	<a class="friday">Пт</a> <!-- Кнопка розкладу на п'ятницю -->
+			   	<a class="menu-btnOff"><i class="fas fa-times"></i></a> <!-- Кнопка закриття меню -->
 		    	</nav>
-  			</div>
-      	<a class="menu-btn-on">
-      		<i class="far fa-clock"></i> <!-- Кнопка закриття => wrapper -->
+  		</div>
+  		<!-- //Menu-block// -->
+
+      	<a class="menu-btn-on"> <!-- Кнопка закриття => wrapper -->
+      		<i class="far fa-clock"></i>
       	</a>
       <!-- //Body// -->
 
@@ -64,7 +68,7 @@
 			<!-- Body -->
 			<div class="inner">
 
-				<div class="time">
+				<div class="time"> <!-- Годиник -->
 					<h1 id="clock">00:00</h1>
 				</div>
 
@@ -89,13 +93,12 @@
 	<!-- //Wrapper-time// -->
 
 <!-- Script -->
-<script src="app.js"></script>
+<script src="src/js/app.js"></script>
 <script src="https://kit.fontawesome.com/034599bd01.js" crossorigin="anonymous"></script>
 <!-- //Script// -->
 
 <!-- Link -->
-<link rel="icon" href="favicon.svg">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="src/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <!-- //Link// -->

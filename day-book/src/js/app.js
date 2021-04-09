@@ -14,7 +14,7 @@ var clock = document.getElementById("clock");
       case 4: return"Четвер";
       case 5: return"П'ятниця";
       case 6: return"Субота";
-      default: return "Х'юстон у на проблєми";
+      default: return "Х'юстон у на проблема!";
     }
   }
 

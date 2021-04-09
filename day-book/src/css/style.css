@@ -6,7 +6,7 @@
 }
  
 html {
-  background: url(back-groung.webp), #221126;
+  background: url(../img/back-groung.webp), #221126;
   overflow: hidden;
 }
 
@@ -30,7 +30,7 @@ ol {
 li {
   margin: 20px;
   position: relative;
-  width: 97%;
+  width: 100%;
 }
 
 .wrapper {
@@ -210,13 +210,6 @@ li {
   bottom: 20px;
 }
 
-@keyframes animate {
-  0%{box-shadow: 0 0 0 0 rgba(255, 255, 255, .2), 0 0 0 0 rgba(255, 255, 255, .0);;}
-  40%{box-shadow: 0 0 0 20px rgba(255, 255, 255, .0), 0 0 0 0 rgba(255, 255, 255, .0);;}
-  80%{box-shadow: 0 0 0 20px rgba(255, 255, 255, .0), 0 0 0 13px rgba(255, 255, 255, .0);;}
-  100%{box-shadow: 0 0 0 0 rgba(255, 255, 255, .0), 0 0 0 13px rgba(255, 255, 255, .0);;}
-}
-
 .menu-btnOn {
   background: #b646f0;
   border-radius: 50%;
@@ -227,7 +220,7 @@ li {
   text-align: center;
   cursor: pointer;
   padding-top: 25px;
-  animation: animate 2s linear infinite;
+  animation: puls 2s linear infinite;
   z-index: 99;
   transition: 1.5s;
   transform: translateY(0%);
@@ -272,7 +265,7 @@ li {
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
-  animation: animate 2s linear infinite;
+  animation: puls 2s linear infinite;
 }
 
 .menu a:nth-child(1) {
@@ -311,4 +304,11 @@ li {
 }
 .menu_active a:nth-child(6) {
   transform: translate(320%, -130%); /* 110 */
+}
+
+@keyframes puls {
+  0%{box-shadow: 0 0 0 0 rgba(255, 255, 255, .2), 0 0 0 0 rgba(255, 255, 255, .0);;}
+  40%{box-shadow: 0 0 0 20px rgba(255, 255, 255, .0), 0 0 0 0 rgba(255, 255, 255, .0);;}
+  80%{box-shadow: 0 0 0 20px rgba(255, 255, 255, .0), 0 0 0 13px rgba(255, 255, 255, .0);;}
+  100%{box-shadow: 0 0 0 0 rgba(255, 255, 255, .0), 0 0 0 13px rgba(255, 255, 255, .0);;}
 }
