@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
 }
  
 html {
@@ -15,20 +14,16 @@ body {
   color: #f9fbf3;
   opacity: 1;
   text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 50%);
+  font-family: "Quicksand", sans-serif;
 }
 
 ol {
   font-size: 70px;
-  background: #341a3d;
-  border-radius: 25px 0px 25px 0px;
   list-style-position: inside; 
-  padding: 10px 60px 10px 60px;
-  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
   font-weight: 550;
 }
 
 li {
-  margin: 20px;
   position: relative;
   width: 100%;
 }
@@ -81,14 +76,15 @@ li {
   justify-content: center;
 }
 
-.prev {
-  height: 100%;
-  padding: 55% 6% 10% 6%;
-}
-
-.next {
-  height: 100%;
-  padding: 55% 6% 10% 6%;
+.border {
+  background: #341a3d;
+  border-radius: 25px 0px 25px 0px;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+  width: 65%;
+  height: 60%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .wrapper-time{
@@ -155,7 +151,7 @@ li {
   text-align: center;
   cursor: pointer;
   padding-top: 25px;
-  animation: animate 2s linear infinite;
+  animation: puls 2s linear infinite;
   right: 200px;
   transition: 1.5s;
   transform: translateY(0%);
@@ -206,7 +202,7 @@ li {
   position: absolute;
   width: 40px;
   height: 40px;
-  right: -40px;
+  right: -50px;
   bottom: 20px;
 }
 

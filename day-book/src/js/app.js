@@ -1,6 +1,6 @@
 var date = new Date();
 
-const table = document.querySelector(".tables ol");
+const table = document.querySelector(".border");
 const weekday = document.querySelector(".weekday h1");
 var clock = document.getElementById("clock");
 
@@ -18,44 +18,44 @@ var clock = document.getElementById("clock");
     }
   }
 
-  const monday = `<li>Фізика</li>
+  const monday = `<ol><li>Фізика</li>
             <li>Хімія</li>
             <li>Історія У.</li>
             <li>Зарубіжна</li>
             <li>Алгебра</li>
             <li>Англ-мова</li>
-            <li>Укр-літ</li>`;
+            <li>Укр-літ</li></ol>`;
 
-  const tuesday = `<li>З.У.</li>
+  const tuesday = `<ol><li>З.У.</li>
           <li>Фіз-ра</li>
           <li>Фізика</li>
           <li>Труди</li>
           <li>Всесвітня</li>
             <li>Укр-мова</li>
-            <li>Укр-літ</li>`;
+            <li>Укр-літ</li></ol>`;
 
-  const wednesday = `<li>Інформатика</li>
+  const wednesday = `<ol><li>Інформатика</li>
             <li>З.У.</li>
             <li>Фіз-ра</li>
             <li>Укр-мова</li>
             <li>Фізика</li>
             <li>Біологія</li>
-            <li>Біологія</li>`;
+            <li>Біологія</li></ol>`;
 
-  const thursday = `<li>Фіз-ра</li>
+  const thursday = `<ol><li>Фіз-ра</li>
           <li>Укр-мова</li>
           <li>Укр-літ</li>
           <li>Географія</li>
           <li>Алгебра</li>
-          <li>Геометрія</li>`;
+          <li>Геометрія</li></ol>`;
 
-  const friday = `<li>Англ-мова</li>
+  const friday = `<ol><li>Англ-мова</li>
             <li>Фізика</li>
             <li>Нім-мова</li>
             <li>Хімія</li>
             <li>Укр-мова</li>
             <li>Укр-літ</li>
-            <li>Інформатика</li>`;
+            <li>Інформатика</li></ol>`;
 
 
 const renderDayBook = () => {
@@ -77,40 +77,46 @@ const renderDayBook = () => {
   	table.innerHTML = friday;
   }
   else{
-    table.innerHTML = `<li style="list-style: none;">Вихідний день</li>`;
+    table.innerHTML = `<ol><li style="list-style: none;">Вихідний день</li></ol>`;
   }
 };
 renderDayBook();
 
-function renderLesson() {
-  var time = new Date();
-  var h = time.getHours();
-  var m = time.getMinutes();
+// function renderLesson() {
+//   var time = new Date();
+//   var h = time.getHours();
+//   var m = time.getMinutes();
 
-  if ( h == 8 && m >= 0 || h == 8 && m <= 45) {
-    document.querySelectorAll(".tables ol li")[0].classList.add('lesson');
-  }
-  else if ( h == 8 && m >= 45 || h == 9 && m <= 50) {
-    document.querySelectorAll(".tables ol li")[1].classList.add('lesson');
-  }
-  else if ( h == 9 && m >= 50 || h == 10 && m <= 55) {
-    document.querySelectorAll(".tables ol li")[2].classList.add('lesson');
-  }
-  else if ( h == 10 && m >= 55 || h == 12 && m <= 0) {
-    document.querySelectorAll(".tables ol li")[3].classList.add('lesson');
-  }
-  else if ( h == 12 && m >= 0 || h == 13 && m <= 5) {
-    document.querySelectorAll(".tables ol li")[4].classList.add('lesson');
-  }
-  else if ( h == 13 && m >= 5 || h == 14 && m <= 0) {
-    document.querySelectorAll(".tables ol li")[5].classList.add('lesson');
-  }
-  else if ( h == 14 && m >= 0 || h == 15 && m <= 55) {
-    document.querySelectorAll("ol li")[6].classList.add('lesson');
-  }
-  else {}
-};
-setInterval(renderLesson, 100);
+//   if ( h == 8 && m >= 0 || h == 8 && m <= 45) {
+//     document.querySelectorAll(".table ol li")[0].classList.add('lesson');
+//   }
+//   else if ( h == 8 && m >= 45 || h == 9 && m <= 50) {
+//     document.querySelectorAll(".table ol li")[1].classList.add('lesson');
+//   }
+//   else if ( h == 9 && m >= 50 || h == 10 && m <= 55) {
+//     document.querySelectorAll(".table ol li")[2].classList.add('lesson');
+//   }
+//   else if ( h == 10 && m >= 55 || h == 12 && m <= 0) {
+//     document.querySelectorAll(".table ol li")[3].classList.add('lesson');
+//   }
+//   else if ( h == 12 && m >= 0 || h == 13 && m <= 5) {
+//     document.querySelectorAll(".table ol li")[4].classList.add('lesson');
+//   }
+//   else if ( h == 13 && m >= 5 || h == 14 && m <= 0) {
+//     document.querySelectorAll(".table ol li")[5].classList.add('lesson');
+//   }
+//   else if ( h == 18 && m >= 0 || h == 15 && m <= 55) {
+//     if (document.querySelectorAll(".table border ol li") !== [6]) {
+//       console.log("none")
+//     }
+//     else {
+      
+//       document.querySelectorAll(".table border ol li")[6].classList.add('lesson');
+//     }
+//   }
+//   else {}
+// };
+// setInterval(renderLesson, 1000);
 
 function Clock() {
   var time = new Date();
