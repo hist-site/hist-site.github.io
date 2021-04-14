@@ -1,110 +1,124 @@
 <!DOCTYPE html>
 <html lang="ua">
+
 <head>
-	<meta charset="UTF-8"> <!-- Кодировка UTF-8 -->
-	<link rel="icon" href="src/img/favicon.webp"> <!-- Картинка WEB сторінки -->
-	<title>Щоденник</title>	<!-- Заголовак -->
-	<style>body{opacity: 0;overflow-x: hidden;}html{background: url(src/img/back-groung.webp), #221126;}</style> <!-- Стиль при загрузкі WEB сторінки -->
+    <meta charset="UTF-8"> <!-- Кодировка UTF-8 -->
+    <link rel="icon" href="src/img/favicon.webp"> <!-- Картинка WEB сторінки -->
+    <title>Щоденник</title> <!-- Заголовак -->
+    <style>
+        html {
+            background: url(src/img/back-groung.webp), #221126;
+        }
+
+        body {
+            opacity: 0;
+            overflow-x: hidden;
+        }
+
+    </style> <!-- Стиль при загрузкі WEB сторінки -->
 </head>
+
 <body>
 
-	<!-- Page1 || Головна сторінка || Розклад  -->
-	<!-- Wrapper -->
+    <!-- Page1 || Головна сторінка || Розклад  -->
+    <!-- Wrapper -->
     <div class="wrapper">
-      <div class="day-book">
+        <div class="day-book">
 
-      	<!-- Header -->
-      	<div class="week">
-      			<div class="weekday">
-      				<h1>
-      					<!-- Js || Відправка дня тижня за допомогою renderDayBook() -->
-      				</h1>
-      			</div>
-      	</div>
-      	<!-- //Header//-->
+            <!-- Header -->
+            <div class="week">
+                <div class="weekday">
+                    <h1>
+                        <!-- Js || Відправка дня тижня за допомогою renderDayBook() -->
+                    </h1>
+                </div>
+            </div>
+            <!-- //Header//-->
 
-      	<!-- Body -->
-      	<div class="tables">
-      			<div class="border">
-      					<!-- Js || Відправка розкладу за допомогою renderDayBook() -->
-      			</div>
-     	</div>
+            <!-- Body -->
+            <div class="tables">
+                <div class="border">
+                    <!-- Js || Відправка розкладу за допомогою renderDayBook() -->
+                </div>
+            </div>
 
-     	<!-- Menu-block -->
-		<div class="menu-block">
-   			<a class="menu-btnOn"><i class="fas fa-calendar-week"></i></a> <!-- Кнопка відкриття меню -->
-		    <nav class="menu">
-			  	<a class="monday">Пн</a> <!-- Кнопка розкладу на понеділок -->
-			   	<a class="tuesday">Вт</a> <!-- Кнопка розкладу на вівторок -->
-			   	<a class="wednesday">Ср</a> <!-- Кнопка розкладу на середу -->
-			   	<a class="thursday">Чт</a> <!-- Кнопка розкладу на четвер -->
-			   	<a class="friday">Пт</a> <!-- Кнопка розкладу на п'ятницю -->
-			   	<a class="menu-btnOff"><i class="fas fa-times"></i></a> <!-- Кнопка закриття меню -->
-		    </nav>
-  		</div>
-  		<!-- //Menu-block// -->
+            <!-- Menu-block -->
+            <div class="menu-block">
+                <a class="menu-btnOn"><i class="fas fa-calendar-week"></i></a> <!-- Кнопка відкриття меню -->
+                <nav class="menu">
+                    <a class="monday">Пн</a> <!-- Кнопка розкладу на понеділок -->
+                    <a class="tuesday">Вт</a> <!-- Кнопка розкладу на вівторок -->
+                    <a class="wednesday">Ср</a> <!-- Кнопка розкладу на середу -->
+                    <a class="thursday">Чт</a> <!-- Кнопка розкладу на четвер -->
+                    <a class="friday">Пт</a> <!-- Кнопка розкладу на п'ятницю -->
+                    <a class="menu-btnOff"><i class="fas fa-times"></i></a> <!-- Кнопка закриття меню -->
+                </nav>
+            </div>
+            <!-- //Menu-block// -->
 
-      	<a class="menu-btn-on"> <!-- Кнопка закриття => wrapper -->
-      		<i class="far fa-clock"></i>
-      	</a>
-      <!-- //Body// -->
+            <a class="menu-btn-on">
+                <!-- Кнопка закриття => wrapper -->
+                <i class="far fa-clock"></i>
+            </a>
+            <!-- //Body// -->
 
-  	  </div>
-	</div>
-	<!-- //Wrapper// -->
-	<!-- //Page1//  -->
+        </div>
+    </div>
+    <!-- //Wrapper// -->
+    <!-- //Page1//  -->
 
-	<!-- Page2 || Сторінка з розкладом дзвінків -->
-	<!-- Wrapper-time -->
-	<div class="wrapper-time">
-		<div class="call-schedule">
+    <!-- Page2 || Сторінка з розкладом дзвінків -->
+    <!-- Wrapper-time -->
+    <div class="wrapper-time">
+        <div class="call-schedule">
 
-			<!-- Header -->
-			<div class="time-header">
-				<h1>Розклад дзвінків</h1>
-			</div>
-			<!-- //Header// -->
+            <!-- Header -->
+            <div class="time-header">
+                <h1>Розклад дзвінків</h1>
+            </div>
+            <!-- //Header// -->
 
-			<!-- Body -->
-			<div class="inner">
+            <!-- Body -->
+            <div class="inner">
 
-				<div class="time"> <!-- Годиник -->
-					<h1 id="clock">00:00</h1>
-				</div>
+                <div class="time">
+                    <h1 id="clock">00:00</h1> <!-- Годиник -->
+                </div>
 
-				<div class="border">
-					<ol>
-						<li>8:00 - 8:45</li>
-					    <li>9:05 - 9:50</li>
-					    <li>10:10 - 10:55</li>
-					   	<li>11:15 - 12:00</li>
-					   	<li>12:20 - 13:05</li>
-					  	<li>13:20 - 14:00</li>
-					    <li>14:15 - 14:55</li>
-			     	</ol>
-		     	</div>
-		     	
-			</div>
-			<!-- //Body// -->
+                <div class="border">
+                    <ol>
+                        <li>8:00 - 8:45</li>
+                        <li>9:05 - 9:50</li>
+                        <li>10:10 - 10:55</li>
+                        <li>11:15 - 12:00</li>
+                        <li>12:20 - 13:05</li>
+                        <li>13:20 - 14:00</li>
+                        <li>14:15 - 14:55</li>
+                    </ol>
+                </div>
 
-		</div>
-		<a class="menu-btn-off">
-			<i class="fas fa-times"></i> <!-- Кнопка закриття => wrapper-time -->
-		</a>
-	</div>
-	<!-- //Wrapper-time// -->
-	<!-- //Page2// -->
+            </div>
+            <!-- //Body// -->
 
-<!-- Script -->
-<script src="src/js/app.js"></script>
-<script src="https://kit.fontawesome.com/034599bd01.js" crossorigin="anonymous"></script>
-<!-- //Script// -->
+        </div>
+        <a class="menu-btn-off">
+            <i class="fas fa-times"></i> <!-- Кнопка закриття => wrapper-time -->
+        </a>
+    </div>
+    <!-- //Wrapper-time// -->
+    <!-- //Page2// -->
 
-<!-- Link -->
-<link rel="stylesheet" href="src/css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<!-- //Link// -->
+    <!-- Script -->
+    <script src="src/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/034599bd01.js" crossorigin="anonymous"></script>
+    <!-- //Script// -->
+
+    <!-- Link -->
+    <link rel="stylesheet" href="src/css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- //Link// -->
 
 </body>
+
 </html>
