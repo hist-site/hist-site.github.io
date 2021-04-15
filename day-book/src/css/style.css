@@ -320,18 +320,18 @@ li {
 
 @keyframes puls {
     0% {
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, .2), 0 0 0 0 rgba(255, 255, 255, .0);
+        box-shadow: 0 0 0 0 #7b2c9733, 0 0 0 0 #7b2c9700;
     }
 
     40% {
-        box-shadow: 0 0 0 20px rgba(255, 255, 255, .0), 0 0 0 0 rgba(255, 255, 255, .0);
+        box-shadow: 0 0 0 20px #7b2c9700, 0 0 0 0 #7b2c9700;
     }
 
     80% {
-        box-shadow: 0 0 0 20px rgba(255, 255, 255, .0), 0 0 0 13px rgba(255, 255, 255, .0);
+        box-shadow: 0 0 0 20px #7b2c9700, 0 0 0 13px #7b2c9700;
     }
 
     100% {
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, .0), 0 0 0 13px rgba(255, 255, 255, .0);
+        box-shadow: 0 0 0 0 #7b2c9700, 0 0 0 13px #7b2c9700;
     }
 }
