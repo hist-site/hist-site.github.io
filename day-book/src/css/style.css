@@ -5,7 +5,7 @@
 }
 
 html {
-    background: url(../img/back-groung.webp), #221126;
+    background: url(../img/back-groung.svg), #221126;
     overflow: hidden;
 }
 
@@ -149,13 +149,12 @@ li {
     height: 150px;
     position: fixed;
     bottom: 35px;
-    text-align: center;
     cursor: pointer;
-    padding-top: 25px;
     animation: puls 2s linear infinite;
     right: 200px;
     transition: 1.5s;
     transform: translateY(0%);
+    padding: 10px;
 }
 
 .menu-btn-on_active {
@@ -170,10 +169,8 @@ li {
     position: fixed;
     bottom: 35px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0 1.5rem 3rem rgb(0 0 0 / 40%);
+    padding: 10px;
 }
 
 .menu-btn-off .far {
@@ -215,13 +212,12 @@ li {
     height: 150px;
     position: fixed;
     bottom: 35px;
-    text-align: center;
     cursor: pointer;
-    padding-top: 25px;
     animation: puls 2s linear infinite;
     z-index: 99;
     transition: 1.5s;
     transform: translateY(0%);
+    padding: 26px;
 }
 
 .menu-btnOn_active {
