@@ -263,6 +263,7 @@ li {
     align-items: center;
     padding-bottom: 30px;
     animation: puls 2s linear infinite;
+    padding: 10px 10px 30px 10px;
 }
 
 .menu a:nth-child(1) {
