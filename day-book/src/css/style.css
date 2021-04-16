@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand/static/Quicksand-Bold.ttf);
+   }
+
 html {
     background: url(../img/back-groung.svg), #221126;
     overflow: hidden;
@@ -79,7 +84,7 @@ li {
 
 .border {
     background: #341a3d;
-    border-radius: 25px 0px 25px 0px;
+    border-radius: 25px 25px 25px 25px;
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
     width: 65%;
     height: 60%;
