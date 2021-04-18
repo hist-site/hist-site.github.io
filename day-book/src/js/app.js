@@ -1,6 +1,6 @@
 var date = new Date();
 
-const table = document.querySelector(".border");
+const table = document.querySelector(".border div");
 const weekday = document.querySelector(".weekday h1");
 const clock = document.getElementById("clock");
 
@@ -26,44 +26,44 @@ const week = function (day) {
     }
 }
 
-const monday = `<ol><li>Фізика</li>
-            <li>Хімія</li>
-            <li>Історія У.</li>
-            <li>Зарубіжна</li>
-            <li>Алгебра</li>
-            <li>Англ-мова</li>
-            <li>Укр-літ</li></ol>`;
+const monday = `<div class="lesson">Фізика</div>
+            <div class="lesson">Хімія</div>
+            <div class="lesson">Історія У.</div>
+            <div class="lesson">Зарубіжна</div>
+            <div class="lesson">Алгебра</div>
+            <div class="lesson">Англ-мова</div>
+            <div class="lesson">Укр-літ</div>`;
 
-const tuesday = `<ol><li>З.У.</li>
-          <li>Фіз-ра</li>
-          <li>Фізика</li>
-          <li>Труди</li>
-          <li>Всесвітня</li>
-            <li>Укр-мова</li>
-            <li>Укр-літ</li></ol>`;
+const tuesday = `<div class="lesson">З.У.</div>
+          <div class="lesson">Фіз-ра</div>
+          <div class="lesson">Фізика</div>
+          <div class="lesson">Труди</div>
+          <div class="lesson">Всесвітня</div>
+            <div class="lesson">Укр-мова</div>
+            <div class="lesson">Укр-літ</div>`;
 
-const wednesday = `<ol><li>Інформатика</li>
-            <li>З.У.</li>
-            <li>Фіз-ра</li>
-            <li>Укр-мова</li>
-            <li>Фізика</li>
-            <li>Біологія</li>
-            <li>Біологія</li></ol>`;
+const wednesday = `<div class="lesson">Інформатика</div>
+            <div class="lesson">З.У.</div>
+            <div class="lesson">Фіз-ра</div>
+            <div class="lesson">Укр-мова</div>
+            <div class="lesson">Фізика</div>
+            <div class="lesson">Біологія</div>
+            <div class="lesson">Біологія</div>`;
 
-const thursday = `<ol><li>Фіз-ра</li>
-          <li>Укр-мова</li>
-          <li>Укр-літ</li>
-          <li>Географія</li>
-          <li>Алгебра</li>
-          <li>Геометрія</li></ol>`;
+const thursday = `<div class="lesson">Фіз-ра</div>
+          <div class="lesson">Укр-мова</div>
+          <div class="lesson">Укр-літ</div>
+          <div class="lesson">Географія</div>
+          <div class="lesson">Алгебра</div>
+          <div class="lesson">Геометрія</div>`;
 
-const friday = `<ol><li>Англ-мова</li>
-            <li>Фізика</li>
-            <li>Нім-мова</li>
-            <li>Хімія</li>
-            <li>Укр-мова</li>
-            <li>Укр-літ</li>
-            <li>Інформатика</li></ol>`;
+const friday = `<div class="lesson">Англ-мова</div>
+            <div class="lesson">Фізика</div>
+            <div class="lesson">Нім-мова</div>
+            <div class="lesson">Хімія</div>
+            <div class="lesson">Укр-мова</div>
+            <div class="lesson">Укр-літ</div>
+            <div class="lesson">Інформатика</div>`;
 
 
 const renderDayBook = () => {
@@ -80,7 +80,7 @@ const renderDayBook = () => {
     } else if (date.getDay() == 5) {
         table.innerHTML = friday;
     } else {
-        table.innerHTML = `<ol><li style="list-style: none;">Вихідний день</li></ol>`;
+        table.innerHTML = `<div>Вихідний день</div>`;
     }
 };
 renderDayBook();

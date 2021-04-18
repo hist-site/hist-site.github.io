@@ -20,12 +20,15 @@ body {
     text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 50%);
     font-family: "Quicksand", sans-serif;
     overflow: hidden;
+    
+    counter-reset: lesson_number;
 }
 
 ol {
     font-size: 70px;
     list-style-position: inside;
     font-weight: 550;
+    margin: 0% 8% 0% 8%;
 }
 
 li {
@@ -88,9 +91,25 @@ li {
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
     width: 65%;
     height: 60%;
-    align-items: center;
-    justify-content: center;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.border >div {
+    margin: 0% 8% 0% 8%;
+}
+
+.border >div>.lesson, div {
+    font-size: 70px;
+    font-weight: 550;
+}
+
+.border >div>.lesson::before {
+    font-size: 70px;
+    font-weight: 550;
+    counter-increment: lesson_number;
+    content: counter(lesson_number) '. ';
 }
 
 .wrapper-time {
@@ -196,17 +215,6 @@ li {
 .far,
 .fas {
     font-size: 90px;
-}
-
-.lesson::before {
-    background-color: #b646f0;
-    content: "";
-    border-radius: 100%;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    right: -50px;
-    bottom: 20px;
 }
 
 .menu-btnOn {
