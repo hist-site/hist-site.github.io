@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    height: 94vh;
+    height: 100vh;
     color: #f9fbf3;
     opacity: 1;
     text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 50%);
@@ -152,7 +152,7 @@ li {
     width: 150px;
     height: 150px;
     position: fixed;
-    top: 60px;
+    bottom: 215px;
     cursor: pointer;
     animation: puls 2s linear infinite;
     right: 200px;
@@ -218,7 +218,7 @@ li {
     cursor: pointer;
     animation: puls 2s linear infinite;
     z-index: 99;
-    top: 60px;
+    bottom: 215px;
     transition: 1.3s;
     transform: translateY(0%);
     padding: 26px;
