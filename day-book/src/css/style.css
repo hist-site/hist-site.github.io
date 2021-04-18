@@ -19,6 +19,7 @@ body {
     opacity: 1;
     font-family: "Quicksand", sans-serif;
     overflow: hidden;
+    position: relative;
     
     counter-reset: lesson_number;
 }
