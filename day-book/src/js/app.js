@@ -85,6 +85,8 @@ const renderDayBook = () => {
 };
 renderDayBook();
 
+const toggleClass = (el, to) => el.classList.toggle(to);
+
 // function renderLesson() {
 //   var time = new Date();
 //   var h = time.getHours();
@@ -141,22 +143,22 @@ function Clock() {
 setInterval(Clock, 500);
 
 document.querySelector(".menu-btn-on").addEventListener("click", () => {
-    document.querySelector(".wrapper-time").classList.add('wrapper-time_active');
-    document.querySelector(".wrapper").classList.add('wrapper_active');
+    toggleClass(document.querySelector(".wrapper-time"),'wrapper-time_active');
+    toggleClass(document.querySelector(".wrapper"),'wrapper_active');
 });
 document.querySelector(".menu-btn-off").addEventListener("click", () => {
-    document.querySelector(".wrapper-time").classList.remove('wrapper-time_active');
-    document.querySelector(".wrapper").classList.remove('wrapper_active');
+    toggleClass(document.querySelector(".wrapper-time"),'wrapper-time_active');
+    toggleClass(document.querySelector(".wrapper"),'wrapper_active');
 });
 document.querySelector(".menu-btnOn").addEventListener("click", () => {
-    document.querySelector('.menu-btn-on').classList.add('menu-btn-on_active');
-    document.querySelector('.menu-btnOn').classList.add('menu-btnOn_active');
-    document.querySelector(".menu").classList.add('menu_active');
+    toggleClass(document.querySelector('.menu-btn-on'),'menu-btn-on_active');
+    toggleClass(document.querySelector('.menu-btnOn'),'menu-btnOn_active');
+    toggleClass(document.querySelector(".menu"),'menu_active');
 });
 document.querySelector(".menu-btnOff").addEventListener("click", () => {
-    document.querySelector('.menu-btnOn').classList.remove('menu-btnOn_active');
-    document.querySelector('.menu-btn-on').classList.remove('menu-btn-on_active');
-    document.querySelector(".menu").classList.remove('menu_active');
+    toggleClass(document.querySelector('.menu-btnOn'),'menu-btnOn_active');
+    toggleClass(document.querySelector('.menu-btn-on'),'menu-btn-on_active');
+    toggleClass(document.querySelector(".menu"),'menu_active');
 });
 
 
