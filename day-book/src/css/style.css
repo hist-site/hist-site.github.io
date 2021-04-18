@@ -248,27 +248,27 @@ li {
 }
 
 .menu_active a:nth-child(1) {
-    transform: translate(-260%, -130%);
+    transform: translate(-260%, -140%);
 }
 
 .menu_active a:nth-child(2) {
-    transform: translate(-150%, -130%);
+    transform: translate(-150%, -140%);
 }
 
 .menu_active a:nth-child(3) {
-    transform: translate(-40%, -130%)
+    transform: translate(-40%, -140%)
 }
 
 .menu_active a:nth-child(4) {
-    transform: translate(70%, -130%);
+    transform: translate(70%, -140%);
 }
 
 .menu_active a:nth-child(5) {
-    transform: translate(180%, -130%);
+    transform: translate(180%, -140%);
 }
 
 .menu_active a:nth-child(6) {
-    transform: translate(320%, -130%);
+    transform: translate(320%, -140%);
     /* 110 */
 }
 
