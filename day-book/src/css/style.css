@@ -338,7 +338,7 @@ li {
 
 .anim_opacity {
     animation: change_opacity .5s linear forwards;
-    animation-delay: .1s;
+    animation-delay: .4s;
     opacity: 0;
 }
 
