@@ -326,19 +326,19 @@ li {
 
 .anim_slide_top {
     animation: slide_top .5s linear forwards;
-    animation-delay: .2s;
+    animation-delay: .1s;
     opacity: 0;
 }
 
 .anim_slide_bottom {
     animation: slide_bottom .5s linear forwards;
-    animation-delay: .2s;
+    animation-delay: .1s;
     opacity: 0;
 }
 
 .anim_opacity {
     animation: change_opacity .5s linear forwards;
-    animation-delay: .2s;
+    animation-delay: .1s;
     opacity: 0;
 }
 
