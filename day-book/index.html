@@ -22,11 +22,11 @@
 
     <!-- Page1 || Головна сторінка || Розклад  -->
     <!-- Wrapper -->
-    <div class="wrapper">
-        <div class="day-book">
+    <div class="grid wrapper">
+        <div class="grid__body">
 
             <!-- Header -->
-            <div class="week anim_slide_bottom">
+            <div class="header anim_slide_bottom">
                 <div class="weekday">
                     <h1>
                         <!-- Js || Відправка дня тижня за допомогою renderDayBook() -->
@@ -38,75 +38,68 @@
             <!-- Body -->
             <div class="tables">
                 <div class="border anim_opacity">
-                   <div>
-                    <!-- Js || Відправка розкладу за допомогою renderDayBook() -->
+                    <div>
+                        <!-- Js || Відправка розкладу за допомогою renderDayBook() -->
                     </div>
                 </div>
             </div>
 
-               <div class="menu-panel anim_slide_top">
-                <!-- Menu-block -->
-                <div class="menu-block">
-                    <a class="menu-btnOn"><img src="src/img/calendar-week-solid.svg"></a> <!-- Кнопка відкриття меню -->
-                    <nav class="menu">
-                        <a class="monday">Пн</a> <!-- Кнопка розкладу на понеділок -->
-                        <a class="tuesday">Вт</a> <!-- Кнопка розкладу на вівторок -->
-                        <a class="wednesday">Ср</a> <!-- Кнопка розкладу на середу -->
-                        <a class="thursday">Чт</a> <!-- Кнопка розкладу на четвер -->
-                        <a class="friday">Пт</a> <!-- Кнопка розкладу на п'ятницю -->
-                        <a class="menu-btnOff"><img src="src/img/times-circle-regular.svg"></a> <!-- Кнопка закриття меню -->
-                    </nav>
-                </div>
-                <!-- //Menu-block// -->
-
-                <a class="menu-btn-on">
-                    <!-- Кнопка закриття => wrapper -->
-                    <img src="src/img/clock-regular.svg">
-                </a>
-                </div>
+            <div class="grid-menu menu-panel anim_slide_top">
+                <a class="grid__item menu-btnOn"><img src="src/img/calendar-week-solid.svg"></a> <!-- Кнопка відкриття меню -->
+                <a class="grid__item menu-btn-on"><img src="src/img/clock-regular.svg"></a> <!-- Кнопка закриття => wrapper -->
+            </div>
             <!-- //Body// -->
 
         </div>
+
     </div>
     <!-- //Wrapper// -->
     <!-- //Page1//  -->
 
+    <div class="menu">
+        <a class="monday">Пн</a> <!-- Кнопка розкладу на понеділок -->
+        <a class="tuesday">Вт</a> <!-- Кнопка розкладу на вівторок -->
+        <a class="wednesday">Ср</a> <!-- Кнопка розкладу на середу -->
+        <a class="thursday">Чт</a> <!-- Кнопка розкладу на четвер -->
+        <a class="friday">Пт</a> <!-- Кнопка розкладу на п'ятницю -->
+        <a class="menu-btnOff"><img src="src/img/times-circle-regular.svg"></a> <!-- Кнопка закриття меню -->
+    </div>
+
     <!-- Page2 || Сторінка з розкладом дзвінків -->
     <!-- Wrapper-time -->
-    <div class="wrapper-time">
-        <div class="call-schedule">
+    <div class="grid wrapper-time">
+        <div class="grid__body">
 
             <!-- Header -->
-            <div class="time-header">
+            <div class="header">
                 <h1>Розклад дзвінків</h1>
             </div>
             <!-- //Header// -->
 
             <!-- Body -->
-            <div class="inner">
+            <div class="grid-time-content tables">
 
                 <div class="time">
                     <h1 id="clock">00:00</h1> <!-- Годиник -->
                 </div>
 
                 <div class="border">
-                    <ol>
-                        <li>8:00 - 8:45</li>
-                        <li>9:05 - 9:50</li>
-                        <li>10:10 - 10:55</li>
-                        <li>11:15 - 12:00</li>
-                        <li>12:20 - 13:05</li>
-                        <li>13:20 - 14:00</li>
-                        <li>14:15 - 14:55</li>
-                    </ol>
+                    <div>
+                        <div>1. 8:00 - 8:45</div>
+                        <div>2. 9:05 - 9:50</div>
+                        <div>3. 10:10 - 10:55</div>
+                        <div>4. 11:15 - 12:00</div>
+                        <div>5. 12:20 - 13:05</div>
+                        <div>6. 13:20 - 14:00</div>
+                        <div>7. 14:15 - 14:55</div>
+                    </div>
                 </div>
-                
-                <a class="menu-btn-off">
-                    <img src="src/img/times-circle-regular.svg"> <!-- Кнопка закриття => wrapper-time -->
-                </a>
-                
             </div>
             <!-- //Body// -->
+
+            <a class="menu-btn-off">
+                <img src="src/img/times-circle-regular.svg"> <!-- Кнопка закриття => wrapper-time -->
+            </a>
 
         </div>
     </div>
@@ -119,6 +112,7 @@
 
     <!-- Link -->
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/grid.min.css">
     <!-- //Link// -->
 
 </body>

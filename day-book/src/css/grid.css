@@ -1,0 +1,25 @@
+.grid {
+    display: grid;
+}
+
+.grid__body {
+    display: grid;
+
+    grid-template: 10% 78% 12% / 100%;
+}
+
+.grid__item {
+    display: flex;
+}
+
+.grid-time-content {
+    display: grid;
+
+    grid-template: 20% 1fr / 100%;
+}
+
+.grid-menu {
+    display: grid;
+
+    grid-template: 100% / 1fr 1fr;
+}

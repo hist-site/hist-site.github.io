@@ -1,13 +1,13 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand/static/Quicksand-Bold.ttf);
+   }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-@font-face {
-    font-family: Quicksand;
-    src: url(../fonts/Quicksand/static/Quicksand-Bold.ttf);
-   }
 
 html {
     background: url(../img/back-groung.svg), #221126;
@@ -17,7 +17,6 @@ body {
     height: 100vh;
     color: #f9fbf3;
     opacity: 1;
-    text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 50%);
     font-family: "Quicksand", sans-serif;
     overflow: hidden;
     
@@ -39,47 +38,39 @@ li {
 .wrapper {
     width: 100%;
     height: 100%;
-    position: fixed;
-    display: flex;
+    position: relative;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
     transition: 0.35s;
-    transform: translateY(0%);
 }
 
 .wrapper_active {
     transform: translateY(-100%);
 }
 
+/*
 .day-book {
     width: 100%;
     height: 100%;
 }
+*/
 
-.week {
-    width: 100%;
-    height: 12rem;
+.header {
+    height: 100%;
     background-color: #341a3d;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem;
     text-align: center;
-    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .4);
 }
 
-.week h1 {
+.header h1 {
     font-size: 5rem;
-    font-weight: 550;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    margin-bottom: 1rem;
 }
 
 .tables {
-    width: 100%;
-    height: 75%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,16 +79,16 @@ li {
 .border {
     background: #341a3d;
     border-radius: 25px 25px 25px 25px;
-    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
-    width: 65%;
-    height: 60%;
-    display: flex;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .4);
+    width: 70%;
+    height: 65%;
+    margin: auto;
     align-items: center;
-    justify-content: flex-start;
+    display: flex;
 }
 
 .border >div {
-    margin: 0% 8% 0% 8%;
+    margin: auto;
 }
 
 .border >div>.lesson, div {
@@ -113,44 +104,17 @@ li {
 }
 
 .wrapper-time {
-    position: fixed;
-    left: 0;
-    top: -100%;
-    z-index: 99;
+    top: -200%;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    overflow: hidden;
     transition: 0.35s;
+    
 }
 
 .wrapper-time_active {
     transform: translateY(100%);
-}
-
-.call-schedule {
-    width: 100%;
-    height: 100%;
-}
-
-.time-header {
-    background-color: #341a3d;
-    width: 100%;
-    height: 12rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0.2rem;
-    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
-}
-
-.time-header h1 {
-    font-size: 5rem;
-    font-weight: 550;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    margin-bottom: 1rem;
 }
 
 .time {
@@ -158,43 +122,29 @@ li {
     width: 60%;
     display: flex;
     font-size: 5rem;
-    position: absolute;
-    top: 13%;
+    margin: auto;
     border-radius: 20px;
     justify-content: center;
     box-shadow: 0 1.5rem 3rem rgb(0 0 0 / 40%);
 }
 
-.menu-btn-on {
+.menu-btn-on , .menu-btn-off {
     background: #b646f0;
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    position: fixed;
-    bottom: 215px;
     cursor: pointer;
     animation: puls 2s linear infinite;
-    right: 200px;
     transition: 1.3s;
+    margin: auto;
     transform: translateY(0%);
     padding: 10px;
 }
 
 .menu-btn-on_active {
-    transform: translate(110%, -100%);
+    transform: translateY(140%);
 }
 
-.menu-btn-off {
-    background: #b646f0;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    bottom: 35px;
-    position: absolute;
-    cursor: pointer;
-    box-shadow: 0 1.5rem 3rem rgb(0 0 0 / 40%);
-    padding: 10px;
-}
 
 .menu-btn-off .far {
     font-size: 100px;
@@ -222,31 +172,26 @@ li {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    position: fixed;
     cursor: pointer;
     animation: puls 2s linear infinite;
     z-index: 99;
-    bottom: 215px;
+    margin: auto;
     transition: 1.3s;
     transform: translateY(0%);
     padding: 26px;
 }
 
 .menu-btnOn_active {
-    transform: translateY(135%);
+    transform: translateY(140%);
 }
 
 .menu-block {
-    justify-content: center;
     display: flex;
-    right: 30px;
 }
 
 .menu {
     justify-content: center;
     display: flex;
-    bottom: 35px;
-    right: 30px;
 }
 
 .menu a {
@@ -255,7 +200,6 @@ li {
     width: 120px;
     height: 120px;
     position: fixed;
-    bottom: 60px;
     text-align: center;
     cursor: pointer;
     padding-top: 30px;
@@ -266,6 +210,7 @@ li {
     text-decoration-line: none;
     font-family: "Quicksand", sans-serif;
     font-weight: 550;
+    margin-top: 20px;
 }
 
 .menu-btnOff {
@@ -275,12 +220,6 @@ li {
     padding-bottom: 30px;
     animation: puls 2s linear infinite;
     padding: 10px 10px 30px 10px;
-}
-
-.menu-panel {
-    display: flex;
-    height: 25%;
-    justify-content: center;
 }
 
 .menu a:nth-child(1) {
