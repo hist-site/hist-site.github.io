@@ -96,18 +96,17 @@ li {
 .wrapper-time {
     position: fixed;
     left: 0;
-    top: 0;
+    top: -100%;
     z-index: 99;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     transition: 0.35s;
-    transform: translateY(-100%);
 }
 
 .wrapper-time_active {
-    transform: translateY(0%);
+    transform: translateY(100%);
 }
 
 .call-schedule {
@@ -153,7 +152,7 @@ li {
     width: 150px;
     height: 150px;
     position: fixed;
-    bottom: 35px;
+    top: 60px;
     cursor: pointer;
     animation: puls 2s linear infinite;
     right: 200px;
@@ -171,8 +170,8 @@ li {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    position: fixed;
     bottom: 35px;
+    position: absolute;
     cursor: pointer;
     box-shadow: 0 1.5rem 3rem rgb(0 0 0 / 40%);
     padding: 10px;
@@ -216,10 +215,10 @@ li {
     width: 150px;
     height: 150px;
     position: fixed;
-    bottom: 35px;
     cursor: pointer;
     animation: puls 2s linear infinite;
     z-index: 99;
+    top: 60px;
     transition: 1.3s;
     transform: translateY(0%);
     padding: 26px;
@@ -232,14 +231,13 @@ li {
 .menu-block {
     justify-content: center;
     display: flex;
-    bottom: 220px;
     right: 30px;
 }
 
 .menu {
     justify-content: center;
     display: flex;
-    bottom: 220px;
+    bottom: 35px;
     right: 30px;
 }
 
@@ -249,7 +247,7 @@ li {
     width: 120px;
     height: 120px;
     position: fixed;
-    bottom: -130px;
+    bottom: 60px;
     text-align: center;
     cursor: pointer;
     padding-top: 30px;
@@ -269,6 +267,12 @@ li {
     padding-bottom: 30px;
     animation: puls 2s linear infinite;
     padding: 10px 10px 30px 10px;
+}
+
+.menu-panel {
+    display: flex;
+    height: 25%;
+    justify-content: center;
 }
 
 .menu a:nth-child(1) {
@@ -318,6 +322,55 @@ li {
 .menu_active a:nth-child(6) {
     transform: translate(320%, -130%);
     /* 110 */
+}
+
+.anim_slide_top {
+    animation: slide_top .5s linear forwards;
+    animation-delay: .2s;
+    opacity: 0;
+}
+
+.anim_slide_bottom {
+    animation: slide_bottom .5s linear forwards;
+    animation-delay: .2s;
+    opacity: 0;
+}
+
+.anim_opacity {
+    animation: change_opacity .5s linear forwards;
+    animation-delay: .2s;
+    opacity: 0;
+}
+
+@keyframes slide_top {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slide_bottom {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes change_opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes puls {

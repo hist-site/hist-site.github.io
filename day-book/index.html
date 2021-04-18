@@ -26,7 +26,7 @@
         <div class="day-book">
 
             <!-- Header -->
-            <div class="week">
+            <div class="week anim_slide_bottom">
                 <div class="weekday">
                     <h1>
                         <!-- Js || Відправка дня тижня за допомогою renderDayBook() -->
@@ -37,29 +37,31 @@
 
             <!-- Body -->
             <div class="tables">
-                <div class="border">
+                <div class="border anim_opacity">
                     <!-- Js || Відправка розкладу за допомогою renderDayBook() -->
                 </div>
             </div>
 
-            <!-- Menu-block -->
-            <div class="menu-block">
-                <a class="menu-btnOn"><img src="src/img/calendar-week-solid.svg"></a> <!-- Кнопка відкриття меню -->
-                <nav class="menu">
-                    <a class="monday">Пн</a> <!-- Кнопка розкладу на понеділок -->
-                    <a class="tuesday">Вт</a> <!-- Кнопка розкладу на вівторок -->
-                    <a class="wednesday">Ср</a> <!-- Кнопка розкладу на середу -->
-                    <a class="thursday">Чт</a> <!-- Кнопка розкладу на четвер -->
-                    <a class="friday">Пт</a> <!-- Кнопка розкладу на п'ятницю -->
-                    <a class="menu-btnOff"><img src="src/img/times-circle-regular.svg"></a> <!-- Кнопка закриття меню -->
-                </nav>
-            </div>
-            <!-- //Menu-block// -->
+               <div class="menu-panel anim_slide_top">
+                <!-- Menu-block -->
+                <div class="menu-block">
+                    <a class="menu-btnOn"><img src="src/img/calendar-week-solid.svg"></a> <!-- Кнопка відкриття меню -->
+                    <nav class="menu">
+                        <a class="monday">Пн</a> <!-- Кнопка розкладу на понеділок -->
+                        <a class="tuesday">Вт</a> <!-- Кнопка розкладу на вівторок -->
+                        <a class="wednesday">Ср</a> <!-- Кнопка розкладу на середу -->
+                        <a class="thursday">Чт</a> <!-- Кнопка розкладу на четвер -->
+                        <a class="friday">Пт</a> <!-- Кнопка розкладу на п'ятницю -->
+                        <a class="menu-btnOff"><img src="src/img/times-circle-regular.svg"></a> <!-- Кнопка закриття меню -->
+                    </nav>
+                </div>
+                <!-- //Menu-block// -->
 
-            <a class="menu-btn-on">
-                <!-- Кнопка закриття => wrapper -->
-                <img src="src/img/clock-regular.svg">
-            </a>
+                <a class="menu-btn-on">
+                    <!-- Кнопка закриття => wrapper -->
+                    <img src="src/img/clock-regular.svg">
+                </a>
+                </div>
             <!-- //Body// -->
 
         </div>
@@ -96,14 +98,15 @@
                         <li>14:15 - 14:55</li>
                     </ol>
                 </div>
-
+                
+                <a class="menu-btn-off">
+                    <img src="src/img/times-circle-regular.svg"> <!-- Кнопка закриття => wrapper-time -->
+                </a>
+                
             </div>
             <!-- //Body// -->
 
         </div>
-        <a class="menu-btn-off">
-            <img src="src/img/times-circle-regular.svg"> <!-- Кнопка закриття => wrapper-time -->
-        </a>
     </div>
     <!-- //Wrapper-time// -->
     <!-- //Page2// -->
