@@ -111,8 +111,7 @@ li {
     height: 100%;
     position: relative;
     overflow: hidden;
-    transition: 0.35s;
-    
+    transition: .35s;
 }
 
 .wrapper-time_active {
@@ -195,6 +194,12 @@ li {
     justify-content: center;
     display: flex;
     position: relative;
+    transition: 1.5s;
+    opacity: 0;
+}
+
+.menu_active {
+    opacity: 1;
 }
 
 .menu a {
