@@ -8,13 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-html {
-    background: url(../img/back-groung.svg), #221126;
-}
-
 body {
     height: 96vh;
+    background: url(../img/back-groung.svg), #221126;
     color: #f9fbf3;
     opacity: 1;
     font-family: "Quicksand", sans-serif;
