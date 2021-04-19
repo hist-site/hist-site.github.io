@@ -1,5 +1,7 @@
 .grid {
     display: grid;
+    
+    overflow: hidden;
 }
 
 .grid__body {
