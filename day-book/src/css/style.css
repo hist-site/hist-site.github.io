@@ -194,7 +194,7 @@ li {
     justify-content: center;
     display: flex;
     position: relative;
-    transition: 1.5s;
+    transition: 1.3s;
     opacity: 0;
 }
 
