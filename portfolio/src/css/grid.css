@@ -13,3 +13,15 @@
 .grid__item {
     display: flex;
 }
+
+.grid-header {
+    display: flex;
+    grid-template: 100% / 100%;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .4);
+}
+
+.grid-footer {
+    display: flex;
+    grid-template: 100% / 100%;
+    box-shadow: 0 -3rem 6rem rgba(0, 0, 0, .4);
+}

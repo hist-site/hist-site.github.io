@@ -1,1 +1,1 @@
-.grid{display:grid;overflow:hidden}.grid__body{display:grid;grid-template:10% 78% 12% / 100%}.grid__item{display:flex}.grid-time-content{display:grid;grid-template:20% 1fr / 100%}.grid-menu{display:grid;grid-template:100% / 1fr 1fr}
+.grid{display:grid;overflow:hidden}.grid__body{display:grid;grid-template:10% 80% 10% / 100%}.grid__item{display:flex}.grid-header{display:flex;grid-template:100% / 100%;box-shadow:0 3rem 6rem rgba(0,0,0,.4)}.grid-footer{display:flex;grid-template:100% / 100%;box-shadow:0 -3rem 6rem rgba(0,0,0,.4)}

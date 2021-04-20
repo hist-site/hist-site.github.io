@@ -19,14 +19,14 @@ section {
 }
 
 header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 13px 20px 0px 20px;
+    padding: 0px 20px;
     display: flex;
     justify-content: space-between;
     z-index: 1000;
+    margin: auto;
 }
 
 header .logo {
@@ -59,8 +59,50 @@ header ul li a {
     user-select: none;
 }
 
-header ul li a.active {
+header ul li a.active,
+header ul li a:hover{
     background: #f9fbf3;
     border-radius: 20px;
     color: #341a3d;
 }
+
+.content {
+    position: relative;
+    background: #211125;
+}
+
+footer {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
