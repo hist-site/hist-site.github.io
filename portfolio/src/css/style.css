@@ -98,18 +98,26 @@ footer {
 
 
 @media (max-width:991px) {
+    header .logo {
+        position: relative;
+        color: #f9fbf3;
+        font-weight: 800;
+        text-decoration: none;
+        font-size: 5em;
+        display: inline-block;
+    }
     .navigation {
         display: none;
     }
     .toggle {
         position: fixed;
         background: url(../img/menu.svg) #b646f0;
-        border-radius: 30px;
-        width: 40px;
-        height: 40px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
         right: 20px;
         z-index: 1000;
-        background-size: 22px;
+        background-size: 55px;
         background-repeat: no-repeat;
         background-position: center;
     }
