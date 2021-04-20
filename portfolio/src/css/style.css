@@ -98,11 +98,16 @@ footer {
 
 
 @media (max-width:991px) {
-    section {
-        padding: 150px 20px;
-    }
     .navigation {
         display: none;
+    }
+    .toggle {
+        background: #b646f0;
+        border-radius: 30px;
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        z-index: 1000;
     }
 }
     
