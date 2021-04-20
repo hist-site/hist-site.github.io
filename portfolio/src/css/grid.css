@@ -30,6 +30,6 @@
     .grid__body {
         display: grid;
 
-        grid-template: 8% 84% 8% / 100%;
+        grid-template: 10% 80% 10% / 100%;
     }
 }
