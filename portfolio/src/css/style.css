@@ -63,6 +63,7 @@ header ul li a:hover{
     background: #f9fbf3;
     border-radius: 20px;
     color: #341a3d;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .2);
 }
 
 .content {
@@ -96,6 +97,7 @@ footer {
     display: flex;
     align-items: center;
     transition: .2s ease-in-out;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .2);
 }
 
 .sci li a i {
@@ -105,26 +107,29 @@ footer {
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
+    transition: .2s ease-in-out;
 }
 
 i.telegram {
     background-image: url(../img/telegram.svg);
-
 }
 
 i.instagram {
     background-image: url(../img/instagram.svg);
-    filter: hue-rotate(180deg);
 }
 
 .sci li a:hover {
     background: #f9fbf3;
     transform: translateY(-10px);
-    
 }
 
+i.telegram:hover {
+    background-image: url(../img/telegram-purple.svg);
+}
 
-
+i.instagram:hover {
+    background-image: url(../img/instagram-purple.svg);
+}
 
 @media (max-width:991px) {
     header .logo {
@@ -149,6 +154,7 @@ i.instagram {
         background-repeat: no-repeat;
         background-position: center;
         margin: 0px 20px;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, .2);
     }
 }
     
