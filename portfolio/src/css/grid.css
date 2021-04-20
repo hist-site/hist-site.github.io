@@ -25,3 +25,11 @@
     grid-template: 100% / 100%;
     box-shadow: 0 -3rem 6rem rgba(0, 0, 0, .4);
 }
+
+@media (max-width:991px) {
+    .grid__body {
+        display: grid;
+
+        grid-template: 8% 84% 8% / 100%;
+    }
+}
