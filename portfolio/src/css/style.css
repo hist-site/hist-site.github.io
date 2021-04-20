@@ -97,12 +97,31 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
+@media (max-width:991px) {
+    section {
+        padding: 150px 20px;
+    }
+    .navigation {
+        display: none;
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
