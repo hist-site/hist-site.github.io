@@ -142,6 +142,11 @@ header ul li a:hover{
     margin-top: 20px;
 }
 
+.mobile-content {
+    font-size: 2.5rem;
+    display: none;
+}
+
 .container:hover .card {
     transform: scale(.9);
     filter: blur(3px);
@@ -309,6 +314,7 @@ i.instagram:hover {
         background-size: 60px;
     }
     .mobile-content {
+        display: inherit;
         font-size: 2.5rem; 
     }
     
