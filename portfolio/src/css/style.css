@@ -15,7 +15,6 @@ html, body {
     background-color: #333;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #f9fbf3;
-    overflow: hidden
 }
 
 .wrapper {
@@ -211,97 +210,6 @@ i.instagram:hover {
     background-image: url(../img/instagram-purple.svg);
 }
 
-
-
-.anim_slide_top {
-    animation: slide_top .5s linear forwards;
-    animation-delay: .1s;
-    opacity: 0;
-}
-
-.anim_slide_bottom {
-    animation: slide_bottom .5s linear forwards;
-    animation-delay: .1s;
-    opacity: 0;
-}
-
-.anim_slide_left {
-    animation: slide_left .5s linear forwards;
-    animation-delay: .1s;
-    opacity: 0;
-}
-
-.anim_slide_right {
-    animation: slide_right .5s linear forwards;
-    animation-delay: .1s;
-    opacity: 0;
-}
-
-.anim_opacity {
-    animation: change_opacity .5s linear forwards;
-    animation-delay: .4s;
-    opacity: 0;
-}
-
-@keyframes slide_top {
-    0% {
-        transform: translateY(25px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes slide_bottom {
-    0% {
-        transform: translateY(-25px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes slide_left {
-    0% {
-        transform: translateX(25px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-
-
-@keyframes slide_right {
-    0% {
-        transform: translateX(-25px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes change_opacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
-
-
-
 @media (max-width:992px) {
     header .logo {
         font-size: 4em;
@@ -310,6 +218,7 @@ i.instagram:hover {
     .navigation {
         display: none;
     }
+    
     .toggle {
         background: url(../img/menu.svg) #5f0074;
         border-radius: 50%;
@@ -321,8 +230,13 @@ i.instagram:hover {
         background-position: center;
         margin: 0px 20px;
         box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
-        
+        opacity: 0;
+
         margin: auto;
+    }
+    
+    .toggle.active {
+        background: url(../img/menu-close.svg) #5f0074;
     }
     
     .container .card {
