@@ -142,6 +142,11 @@ header ul li a:hover{
     margin-top: 20px;
 }
 
+.container .card .content a:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+
 .mobile-content {
     font-size: 2.5rem;
     display: none;
