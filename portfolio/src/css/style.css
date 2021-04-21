@@ -231,9 +231,9 @@ i.instagram:hover {
     }
     
     .container .card {
-        width: 43%;
-        height: 45%;
-        margin: auto;
+        width: 85%;
+        height: 40vh;
+        margin: 40px auto;
     }
     
     .container .card .content a {
