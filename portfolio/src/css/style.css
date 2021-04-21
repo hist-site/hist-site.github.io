@@ -307,7 +307,11 @@ i.instagram:hover {
         width: 109px;
         height: 109px;
         background-size: 60px;
-}
+    }
+    .mobile-content {
+        font-size: 2.5rem; 
+    }
+    
 }
     
     
