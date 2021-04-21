@@ -207,7 +207,7 @@ i.instagram:hover {
     background-image: url(../img/instagram-purple.svg);
 }
 
-@media (max-width:991px) {
+@media (max-width:992px) {
     header .logo {
         font-size: 4em;
         margin-inline-start: 40px;
@@ -232,7 +232,7 @@ i.instagram:hover {
     
     .container .card {
         width: 85%;
-        height: 37vh;
+        height: 35vh;
         margin: 40px auto;
     }
     
