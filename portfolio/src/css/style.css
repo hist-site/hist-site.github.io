@@ -231,9 +231,7 @@ i.instagram:hover {
     }
     
     .container .card {
-        width: 85%;
-        height: 35vh;
-        margin: 40px auto;
+        display: none;
     }
     
     .container .card .content a {
