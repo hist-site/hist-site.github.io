@@ -55,8 +55,7 @@ header ul{
     margin: auto;
 }
 
-header ul li,
-.container ul li{
+header ul li {
     list-style: none;
     padding: 2px 0 0 0;
 }
@@ -73,8 +72,6 @@ header ul li a {
 }
 
 header ul li a.active,
-.container ul li a.active,
-.container ul li a:hover,
 header ul li a:hover{
     background: #5f0074;
     border-radius: 40px;
@@ -242,7 +239,13 @@ i.instagram:hover {
         flex-direction: column;
         margin: auto;
         z-index: 100;
-    } 
+    }
+    
+    .container ul li{
+        list-style: none;
+        padding: 5rem 0 0 0;
+    }
+    
     .container ul li a {
         font-size: 6em;
         color: #f9fbf3;
@@ -250,6 +253,15 @@ i.instagram:hover {
         text-decoration: none;
         padding: 8px 18px;
         user-select: none;
+    }
+    
+    .container ul li a.active,
+    .container ul li a:hover {
+        background: #5f0074;
+        border-radius: 75px;
+        box-shadow: 0 15px 25px rgb(0 0 0 / 20%);
+        padding: 15px 30px;
+        margin: 15px 0;
     }
     
     .toggle {
