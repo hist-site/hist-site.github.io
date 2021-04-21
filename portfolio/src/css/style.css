@@ -236,6 +236,15 @@ i.instagram:hover {
         margin: auto;
     }
     
+    .container .card .content a {
+        padding: 15px 25px;
+        font-size: 2.5em;
+    }
+    
+    .container .card .content p {
+        font-size: 2em;
+    }
+    
     .sci li a {
         width: 100px;
         height: 100px;
