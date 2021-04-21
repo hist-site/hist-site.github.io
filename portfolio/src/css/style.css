@@ -10,12 +10,21 @@
     font-family: 'Nunito', sans-serif;
 }
 
-body {
-    height: 100vh;
+html, body {
+    height: 100%;
+    background-color: #333;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #f9fbf3;
+}
+
+.wrapper {
+    background: #211125;
+    min-height: 100vh;
 }
 
 section {
     background: #341a3d;
+    z-index: 1000;
 }
 
 header {
@@ -68,15 +77,16 @@ header ul li a:hover{
     box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
 }
 
-.conteiner {
+.container {
     position: relative;
-    background: #211125;
     padding: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-.conteiner .card {
+.container .card {
     position: relative;
     background: #341a3d;
     width: 300px;
@@ -86,9 +96,10 @@ header ul li a:hover{
     overflow: hidden;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
     transition: .5s;
+    margin: auto;
 }
 
-.conteiner .card .circle {
+.container .card .circle {
     position: relative;
     width: 100%;
     height: 100%;
@@ -97,13 +108,13 @@ header ul li a:hover{
     text-align: center;
 }
 
-.conteiner .card .circle h2 {
+.container .card .circle h2 {
     color: #f9fbf3;
     font-size: 4.5em;
     padding: 30px 0;
 }
 
-.conteiner .card .content {
+.container .card .content {
     position: absolute;
     width: 100%;
     bottom: 10px;
@@ -111,11 +122,11 @@ header ul li a:hover{
     text-align: center;
 }
 
-.conteiner .card .content p {
+.container .card .content p {
     color: #f9fbf3;
 }
 
-.conteiner .card .content a {
+.container .card .content a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -126,12 +137,21 @@ header ul li a:hover{
     margin-top: 20px;
 }
 
+/*
+.container:hover .card {
+    transform: scale(.9);
+    opacity: .5;
+}
+*/
+
+.container .card:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
 
 footer {
     width: 100%;
     padding: 0px 20px;
-    display: flex;
-    justify-content: space-between;
     z-index: 1000;
     margin: auto;
 }
@@ -209,6 +229,13 @@ i.instagram:hover {
         
         margin: auto;
     }
+    
+    .container .card {
+        width: 43%;
+        height: 45%;
+        margin: auto;
+    }
+    
     .sci li a {
         width: 100px;
         height: 100px;
@@ -219,23 +246,5 @@ i.instagram:hover {
         background-size: 60px;
 }
 }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
