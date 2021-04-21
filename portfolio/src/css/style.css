@@ -208,16 +208,7 @@ i.instagram {
 }
 
 .sci li a:hover {
-    background: #f9fbf3;
-    transform: translateY(-10px);
-}
-
-i.telegram:hover {
-    background-image: url(../img/telegram-purple.svg);
-}
-
-i.instagram:hover {
-    background-image: url(../img/instagram-purple.svg);
+    transform: scale(1.1);
 }
 
 @media (max-width:992px) {
