@@ -15,7 +15,9 @@
 }
 
 .grid-header {
-    display: flex;
+    display: grid;
+    grid-template: 100% / 25% 35% 40%;
+    
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, .4);
 }
 
@@ -26,8 +28,11 @@
 
 @media (max-width:991px) {
     .grid__body {
-        display: grid;
-
         grid-template: 8% 84% 8% / 100%;
     }
+    
+    .grid-header {
+        grid-template: 100% / 82% 18%;
+}
+    
 }
