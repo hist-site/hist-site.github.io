@@ -7,15 +7,14 @@
 .side-bar {
     background: #341a3d;
     height: 110%;
-    padding-top: 20px;
+    padding: 20px 10px;
     display: flex;
-    transition: 0.6s ease;
-    transition-property: left;
 }
 
 .side-bar .menu {
     width: 100%;
     height: fit-content;
+    transition: .5s;
 }
 
 .side-bar .menu .item {
@@ -26,50 +25,57 @@
     color: #f9fbf3;
     font-size: 1em;
     text-decoration: none;
-    display: block;
+    display: flex;
     padding: 0 15px;
+    margin-bottom: 5px;
     line-height: 50px;
+    align-items: center;
+    border-radius: 30px;
+    background: #5f0074;
+    transition: .5s;
 }
 
 .side-bar .menu .item a:hover {
-    background: #5f0074;
-    transition: 0.3s ease;
+    transform: scale(1.05);
+}
+
+.side-bar .menu .item i {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+i.html5 {
+    background-image: url(../img/html5.svg);
+}
+
+i.css3 {
+    background-image: url(../img/css3.svg);
+}
+
+i.js {
+    background-image: url(../img/js.svg);
 }
 
 .side-bar .menu .item a .dropdown {
     position: absolute;
     right: 0;
     margin: 10px;
-    transition: 0.3s ease;
+    transition: 0.1s ease;
 }
 
 .side-bar .menu .item .sub-menu {
+    width: 93%;
+    margin: auto;
     display: none;
 }
 
 .side-bar .menu .item .sub-menu a {
-    padding-left: 80px;
-}
-
-.rotate {
-    transform: rotate(90deg);
-}
-
-.close-btn {
-    position: absolute;
-    color: #fff;
-    font-size: 20px;
-    right: 0;
-    margin: 25px;
-    cursor: pointer;
-}
-
-.menu-btn {
-    position: absolute;
-    color: #fff;
-    font-size: 20px;
-    margin: 25px;
-    cursor: pointer;
+    padding-left: 60px;
+    box-shadow: inset 0px 3px 2px 1px rgba(0, 0, 0, .4);
 }
 
 .main {
