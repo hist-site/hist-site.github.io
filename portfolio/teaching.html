@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <!-- Link -->
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/dropdown-menu.css">
     <link rel="stylesheet" href="src/css/grid.min.css">
     <!-- //Link// -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Навчання</title>
 </head>
 <body>
@@ -25,18 +27,57 @@
             </header>
         </section>
         
-        <div class="container">
+        <div class="grid-teaching-container container">
+                
+                <div class="container-content">
+                    
+                </div>
+                
+                <div class="side-bar">
+                  <div class="menu">
+                   
+                    <div class="item">
+                      <a class="sub-btn">Html</a>
+                      <div class="sub-menu">
+                        <a href="#" class="sub-item">Sub Item 01</a>
+                        <a href="#" class="sub-item">Sub Item 02</a>
+                        <a href="#" class="sub-item">Sub Item 03</a>
+                      </div>    
+                    </div>
+                    
+                    <div class="item">
+                      <a class="sub-btn">Css</a>
+                      <div class="sub-menu">
+                        <a href="#" class="sub-item">Sub Item 01</a>
+                        <a href="#" class="sub-item">Sub Item 02</a>
+                        <a href="#" class="sub-item">Sub Item 03</a>
+                      </div>
+                    </div>
+                    
+                    <div class="item">
+                    <a class="sub-btn">Js</a>
+                    <div class="sub-menu">
+                        <a href="#" class="sub-item">Sub Item 01</a>
+                        <a href="#" class="sub-item">Sub Item 02</a>
+                        <a href="#" class="sub-item">Sub Item 03</a>
+                      </div>
+                    </div>
+                    
+                    <div class="item">
+                      <a class="sub-btn"><i class="fas fa-cogs"></i>Settings<i class="fas fa-angle-right dropdown"></i></a>
+                      <div class="sub-menu">
+                        <a href="#" class="sub-item">Sub Item 01</a>
+                        <a href="#" class="sub-item">Sub Item 02</a>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div> 
                 
                 <div class="mobile-content">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione et eius id laborum, cumque quisquam reprehenderit sequi. Dolor, velit, labore expedita maiores, earum quidem iusto voluptates molestias saepe aliquid libero laborum atque explicabo fugit quo harum dignissimos placeat, inventore exercitationem. Numquam est, nemo quam quis suscipit itaque accusamus cum! Voluptatum dicta, asperiores quaerat eos, corrupti neque commodi harum illum quia excepturi unde pariatur quam facilis saepe perspiciatis modi tempora fuga sequi odit aspernatur. A amet sit labore fuga sapiente iste nihil commodi, quas nostrum cumque numquam obcaecati omnis velit facere iusto sed aperiam aspernatur possimus ipsam eum qui magni ipsum, deserunt vitae impedit! Voluptatibus praesentium voluptas eligendi iste, quae obcaecati provident expedita hic quidem, deserunt qui beatae. Iusto optio earum reiciendis provident voluptatum natus ad ipsa placeat inventore quia culpa possimus, incidunt voluptates assumenda, totam ratione nesciunt odit ea! Modi quo est sunt consectetur sint voluptatibus eius. Dolor recusandae, sunt.
                 </div>
-                
-                <ul class="mobile-navigation">
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="">хз</a></li>
-                    <li><a href="">хз</a></li>
-                    <li><a href="">хз</a></li>
-                </ul>
+
         </div>
         
         <section>
@@ -50,5 +91,6 @@
         
     </div>
     <script src="src/js/app.js"></script>
+    <script src="src/js/side-menu.js"></script>
 </body>
 </html>

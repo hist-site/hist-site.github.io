@@ -15,13 +15,19 @@
 .grid-header {
     grid-area: header;
     display: grid;
-    grid-template: 100% / 25% 35% 40%;
+    grid-template: 100% / 20% 30% 50%;
     
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, .4);
 }
 
 .grid-container {
     grid-area: container;
+}
+
+.grid-teaching-container {
+    display: grid;
+    
+    grid-template: 100% / 77% 23%;
 }
 
 .grid-footer {
