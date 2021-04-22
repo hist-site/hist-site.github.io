@@ -312,7 +312,8 @@ i.instagram {
         background-size: 60px;
     }
     .mobile-content {
-        display: inherit;
+        display: flex;
+        flex-direction: column;
         font-size: 2.5rem; 
     }
     
