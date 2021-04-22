@@ -140,11 +140,11 @@ header ul li a:hover{
     border-radius: 40px;
     text-decoration: none;
     margin-top: 20px;
+    transition: .2s ease-in-out;
 }
 
 .container .card .content a:hover {
     transform: scale(1.1);
-    transition: .2s ease-in-out;
 }
 
 .mobile-content {
@@ -201,7 +201,6 @@ footer {
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
-    transition: .2s ease-in-out;
 }
 
 i.telegram {
