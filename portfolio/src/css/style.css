@@ -81,6 +81,10 @@ header ul li a:hover{
     display: none;
 }
 
+.mobile-content {
+    display: none;
+}
+
 .container {
     position: relative;
     padding: 20px;
