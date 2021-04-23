@@ -302,7 +302,7 @@ a::before {
         height: 100px;
     }
 
-    .sci li a i {
+    a::before {
         font-size: 4rem;
     }
 
