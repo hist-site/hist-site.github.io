@@ -251,16 +251,12 @@ i.instagram {
         z-index: 100;
     }
 
-    .container {
-        display: none
-    }
-
-    .container ul li {
+    .mobile-container ul li {
         list-style: none;
         padding: 5rem 0 0 0;
     }
 
-    .container ul li a {
+    .mobile-container ul li a {
         font-size: 6em;
         color: #f9fbf3;
         font-weight: 600;
@@ -269,8 +265,8 @@ i.instagram {
         user-select: none;
     }
 
-    .container ul li a.active,
-    .container ul li a:hover {
+    .mobile-container ul li a.active,
+    .mobile-container ul li a:hover {
         background: #5f0074;
         border-radius: 75px;
         box-shadow: 0 15px 25px rgb(0 0 0 / 20%);
@@ -278,7 +274,9 @@ i.instagram {
         margin: 15px 0;
     }
 
-
+    .container {
+        display: none;
+    }
 
     .toggle {
         background: url(../img/menu.svg) #5f0074;
@@ -300,15 +298,6 @@ i.instagram {
         background-size: 60px;
         background-repeat: no-repeat;
         background-position: center;
-    }
-
-    .container .card .content a {
-        padding: 15px 25px;
-        font-size: 2.5em;
-    }
-
-    .container .card .content p {
-        font-size: 2em;
     }
 
     .sci li a {

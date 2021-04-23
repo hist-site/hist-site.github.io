@@ -3,6 +3,8 @@ $(document).ready(function(){
         arrows:false,
         slidesToShow: 1,
         centerMode:true,
-        touchThreshold:3,
+        touchThreshold:20,
+        touchMove:false,
+        dots:true,
     });
 })
