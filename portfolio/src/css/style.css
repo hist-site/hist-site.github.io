@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    -webkit-user-select: none;
 }
 
 html,
@@ -289,6 +290,7 @@ i.instagram {
         background-position: center;
         margin: 0px 20px;
         box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+        transition: .2s;
 
         margin: auto;
     }
