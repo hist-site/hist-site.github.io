@@ -247,12 +247,12 @@ a::before {
         z-index: 100;
     }
 
-    .mobile-container ul li {
+    .mobile-navigation li {
         list-style: none;
         padding: 5rem 0 0 0;
     }
 
-    .mobile-container ul li a {
+    .mobile-navigation li a {
         font-size: 6em;
         color: #f9fbf3;
         font-weight: 600;
@@ -261,8 +261,8 @@ a::before {
         user-select: none;
     }
 
-    .mobile-container ul li a.active,
-    .mobile-container ul li a:hover {
+    .mobile-navigation li a.active,
+    .mobile-navigation li a:hover {
         background: #5f0074;
         border-radius: 75px;
         box-shadow: 0 15px 25px rgb(0 0 0 / 20%);
@@ -303,7 +303,7 @@ a::before {
     }
 
     a::before {
-        font-size: 4rem;
+        font-size: 69px;
     }
 
     .mobile-container {

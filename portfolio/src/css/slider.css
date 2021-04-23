@@ -92,7 +92,7 @@
 }
 
 @media (max-width: 992px) {
-    .slick-dots li {
+    .slider ul li {
         padding: 2rem;
     }
 }
