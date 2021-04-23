@@ -10,11 +10,9 @@
   font-display: block;
 }
 
-[class^="my-font__"]::before, [class*=" my-font__"]::before {
+[class^="my-font__"], [class*=" my-font__"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'my-font' !important;
-  display: inline-block;
-  overflow: hidden;
   speak: never;
   font-style: normal;
   font-weight: normal;
