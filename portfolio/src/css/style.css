@@ -198,26 +198,21 @@ footer {
     background: #5f0074;
     display: flex;
     align-items: center;
+    justify-content: center;
     transition: .2s ease-in-out;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
 }
 
-.sci li a i {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
+a::before {
+    color: #f9fbf3;
+    font-size: xx-large;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
 }
 
-i.telegram {
-    background-image: url(../img/telegram.svg);
-}
-
-i.instagram {
-    background-image: url(../img/instagram.svg);
-}
 
 .sci li a:hover {
     transform: scale(1.1);
@@ -308,9 +303,7 @@ i.instagram {
     }
 
     .sci li a i {
-        width: 109px;
-        height: 109px;
-        background-size: 60px;
+        font-size: 4rem;
     }
 
     .mobile-container {
