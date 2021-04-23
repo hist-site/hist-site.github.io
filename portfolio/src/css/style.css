@@ -203,7 +203,7 @@ footer {
     box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
 }
 
-a::before {
+i {
     color: #f9fbf3;
     font-size: xx-large;
     width: fit-content;
@@ -302,7 +302,7 @@ a::before {
         height: 100px;
     }
 
-    a::before {
+    i {
         font-size: 69px;
     }
 
