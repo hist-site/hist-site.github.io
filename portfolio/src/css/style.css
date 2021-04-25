@@ -201,6 +201,7 @@ footer {
 
 i {
     color: #f9fbf3;
+    font-size: xx-large;
 }
 
 
@@ -320,7 +321,7 @@ i {
     .mobile-container .card .circle {
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 75%;
         background: #5f0074;
         clip-path: circle(50% at center 0);
         text-align: center;
