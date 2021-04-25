@@ -3,14 +3,6 @@
     src: url(../fonts/Nunito/Nunito-Black.ttf);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    -webkit-user-select: none;
-}
-
 html,
 body {
     height: 100%;
@@ -205,12 +197,6 @@ footer {
 
 i {
     color: #f9fbf3;
-    font-size: xx-large;
-    width: fit-content;
-    height: fit-content;
-    overflow: hidden;
-    display: block;
-    justify-content: center;
 }
 
 
