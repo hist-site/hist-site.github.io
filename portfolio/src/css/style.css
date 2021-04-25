@@ -10,6 +10,10 @@ body {
     color: #f9fbf3;
 }
 
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     background: #211125;
     min-height: 100vh;
