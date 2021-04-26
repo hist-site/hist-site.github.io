@@ -1,55 +1,48 @@
 @font-face {
-    font-family: 'my-font';
-    src: url('fonts/my-font.eot?1fl0kz');
-    src: url('fonts/my-font.eot?1fl0kz#iefix') format('embedded-opentype'),
-        url('fonts/my-font.ttf?1fl0kz') format('truetype'),
-        url('fonts/my-font.woff?1fl0kz') format('woff'),
-        url('fonts/my-font.svg?1fl0kz#my-font') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
+  font-family: 'my-font';
+  src:  url('fonts/my-font.eot?aox5wi');
+  src:  url('fonts/my-font.eot?aox5wi#iefix') format('embedded-opentype'),
+    url('fonts/my-font.ttf?aox5wi') format('truetype'),
+    url('fonts/my-font.woff?aox5wi') format('woff'),
+    url('fonts/my-font.svg?aox5wi#my-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
 i {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'my-font' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    overflow: hidden;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'my-font' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .mf-telegram:before {
-    content: "\e903";
+  content: "\e903";
 }
-
 .mf-instagram:before {
-    content: "\e904";
+  content: "\e904";
 }
-
 .mf-html5:before {
-    content: "\e900";
+  content: "\e900";
 }
-
 .mf-css3:before {
-    content: "\e901";
+  content: "\e901";
 }
-
 .mf-js:before {
-    content: "\e902";
+  content: "\e902";
 }
-
 .mf-menu:before {
-    content: "\e905";
+  content: "\e905";
 }
-
 .mf-menu-close:before {
-    content: "\e906";
+  content: "\e906";
 }
