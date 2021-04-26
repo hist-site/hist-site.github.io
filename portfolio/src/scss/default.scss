@@ -22,6 +22,7 @@ body {
     height: 100%;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: $color;
+	font-size: 10px;
 }
 
 a {
@@ -30,7 +31,7 @@ a {
 
 i {
     color: $color;
-    font-size: xx-large;
+    font-size: 3rem;
 }
 
 section {
@@ -45,6 +46,7 @@ header {
 .wrapper {
     background: $bgColor1;
     min-height: 100vh;
+	font-size: 2rem;
 }
 
 footer {

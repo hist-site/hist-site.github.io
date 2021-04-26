@@ -78,14 +78,14 @@ header ul li a:hover {
 
 .container .card .circle h2 {
   color: #f9fbf3;
-  font-size: 3em;
-  padding: 30px 0;
+  font-size: 5rem;
+  padding: 40px 0;
 }
 
 .container .card .content {
   position: absolute;
   width: 100%;
-  bottom: 10px;
+  bottom: 0px;
   padding: 20px;
   text-align: center;
 }
@@ -316,6 +316,7 @@ body {
   height: 100%;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #f9fbf3;
+  font-size: 10px;
 }
 
 a {
@@ -324,7 +325,7 @@ a {
 
 i {
   color: #f9fbf3;
-  font-size: xx-large;
+  font-size: 3rem;
 }
 
 section {
@@ -338,11 +339,13 @@ header {
   display: flex;
   justify-content: space-between;
   margin: auto;
+  font-size: 1.7rem;
 }
 
 .wrapper {
   background: #211125;
   min-height: 100vh;
+  font-size: 2rem;
 }
 
 footer {
@@ -351,6 +354,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin: auto;
+  font-size: 1.7rem;
 }
 
 .grid__body {
