@@ -1,0 +1,73 @@
+doctype html
+html(lang="uk")
+	head
+		meta(charset="UTF-8")
+		link(rel="stylesheet" href="src/css/style.css")
+		link(rel="stylesheet" href="src/fonts/my-font/style.css")
+		title Головна
+	body
+		div.grid__body.wrapper
+			include modules/header
+				
+
+			div.container
+			
+				div.card
+					div.circle
+						h2 Текст
+					div.content
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, fuga vitae saepe iste ea! Fuga.
+						a(href="") Читати
+
+				div.card
+					div.circle
+						h2 Текст
+					div.content
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, fuga vitae saepe iste ea! Fuga.
+						a(href="") Читати
+
+
+				div.card
+					div.circle
+						h2 Навчання
+					div.content
+						p Опис
+						a(href="teaching.html") Читати
+
+			div.mobile-container
+				div.slider
+				
+					div.slider__item
+						div.card
+							div.circle
+								h2 01
+							div.content
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, fuga vitae saepe iste ea! Fuga.
+								a(href="") Читати далі
+
+					div.slider__item
+						div.card
+							div.circle
+								h2 01
+							div.content
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, fuga vitae saepe iste ea! Fuga.
+								a(href="") Читати далі
+
+					div.slider__item
+						div.card
+							div.circle
+								h2 01
+							div.content
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, fuga vitae saepe iste ea! Fuga.
+								a(href="") Читати далі
+
+				ul.mobile-navigation
+					li
+						a.active Головна
+
+			include modules/footer
+
+		script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+		script(src="src/js/slick.min.js")
+		script(src="src/js/slider.js")
+		script(src="src/js/app.js")
