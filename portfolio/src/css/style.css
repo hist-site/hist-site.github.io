@@ -164,6 +164,10 @@ header ul li a:hover {
   display: flex;
 }
 
+.side-bar i {
+  margin-right: 1rem;
+}
+
 .side-bar .menu {
   width: 100%;
   height: -webkit-fit-content;
@@ -178,7 +182,7 @@ header ul li a:hover {
 
 .side-bar .menu .item a {
   color: #f9fbf3;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
   display: flex;
   padding: 0 15px;
@@ -307,10 +311,6 @@ header ul li a:hover {
   -webkit-user-select: none;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 html,
 body {
   height: 100%;
@@ -357,6 +357,10 @@ footer {
   font-size: 1.7rem;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .grid__body {
   display: grid;
   grid-template: minmax(75px, auto) 1fr minmax(75px, auto)/1fr;
@@ -384,7 +388,7 @@ footer {
 
 .grid-teaching-container {
   display: grid;
-  grid-template: 100%/77% 23%;
+  grid-template: 100%/80% 20%;
 }
 
 .grid-footer {

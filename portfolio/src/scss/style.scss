@@ -1,42 +1,51 @@
 @import "variable";
 @import "mixins";
 
-
-
-header .logo {
-	color: #f9fbf3;
-	text-decoration: none;
-	font-size: 1.8em;
-	letter-spacing: 1px;
-	padding: 8px 18px;
-	background: #5f0074;
-	border-radius: 40px;
-	box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
-
-	margin: auto;
+header {
+	.logo {
+		color: #f9fbf3;
+		text-decoration: none;
+		font-size: 1.8em;
+		letter-spacing: 1px;
+		padding: 8px 18px;
+		background: #5f0074;
+		border-radius: 40px;
+		box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+		margin: auto;
+	}
 }
 
-
-
-header ul {
-	display: flex;
-	margin: auto;
+header {
+	ul {
+		display: flex;
+		margin: auto;
+	}
 }
 
-header ul li {
-	list-style: none;
-	padding: 2px 0 0 0;
+header {
+	ul {
+		li {
+			list-style: none;
+			padding: 2px 0 0 0;
+		}
+	}
 }
 
-header ul li a {
-	display: inline-block;
-	font-weight: 600;
-	font-size: 1.1em;
-	color: #f9fbf3;
-	margin-left: 10px;
-	text-decoration: none;
-	padding: 8px 18px;
-	user-select: none;
+header {
+	ul {
+		li {
+			a {
+				display: inline-block;
+				font-weight: 600;
+				font-size: 1.1em;
+				color: #f9fbf3;
+				margin-left: 10px;
+				text-decoration: none;
+				padding: 8px 18px;
+				user-select: none;
+			}
+		}
+	}
 }
 
 header ul li a.active,
@@ -172,6 +181,13 @@ header ul li a:hover {
 	display: flex;
 }
 
+.side-bar {
+	i {
+		margin-right: 1rem;
+	}
+
+}
+
 .side-bar .menu {
 	width: 100%;
 	height: fit-content;
@@ -184,7 +200,7 @@ header ul li a:hover {
 
 .side-bar .menu .item a {
 	color: #f9fbf3;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	text-decoration: none;
 	display: flex;
 	padding: 0 15px;
@@ -212,7 +228,7 @@ header ul li a:hover {
 	margin: auto;
 	display: none;
 }
- 
+
 .side-bar .menu .item .sub-menu .sub-item {}
 
 .side-bar .menu .item .sub-menu a {
