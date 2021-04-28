@@ -1,11 +1,9 @@
-doctype html
-html(lang="uk")
-	head
-		meta(charset="UTF-8")
-		link(rel="stylesheet" href="src/css/style.css")
-		link(rel="stylesheet" href="src/fonts/my-font/style.css")
-		title Навчання
-	body
+extends modules/base
+
+block vars
+	- siteTitle = 'Навчання';
+
+block content
 		div.grid__body.wrapper
 			include modules/header
 				
@@ -16,22 +14,22 @@ html(lang="uk")
 					div.menu
 
 						div.item
-							a.sub-btn 
+							a.sub-btn
 								i.mf-html5
-								p Html властивості
+								| Html властивості
 							div.sub-menu
 
 						div.item
 							a.sub-btn
 								i.mf-css3
-								p Css властивості
+								| Css властивості
 							div.sub-menu
 								a(href="#").sub-item Background
 
 						div.item
 							a.sub-btn
 								i.mf-js
-								p Js властивості
+								| Js властивості
 							div.sub-menu
 
 			include modules/footer

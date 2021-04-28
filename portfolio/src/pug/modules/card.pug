@@ -1,0 +1,16 @@
+include ../mixins/card
+.container
+	+Card('Назва', 'Опис', 'Посилання')
+	+Card('Назва', 'Опис', 'Посилання')
+	+Card('Навчання', 'Опис', 'teaching.html')
+	ul.mobile-navigation
+		li
+			a.active Головна
+.mobile-container
+	.slider
+		.slider__item
+			+Card('01', 'Опис', 'Посилання')
+		.slider__item
+			+Card('02', 'Опис', 'Посилання')
+		.slider__item
+			+Card('03', 'Опис', 'Посилання')

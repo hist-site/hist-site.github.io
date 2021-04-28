@@ -1,0 +1,14 @@
+block vars
+	- var	siteTitle = 'Site title';
+	
+include ../mixins/card
+
+doctype html
+html(lang="uk")
+	head
+		meta(charset="UTF-8")
+		link(rel="stylesheet" href="src/css/style.css")
+		link(rel="stylesheet" href="src/fonts/my-font/style.css")
+		title #{siteTitle}
+	body
+		block content

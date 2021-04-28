@@ -1,69 +1,12 @@
-doctype html
-html(lang="uk")
-	head
-		meta(charset="UTF-8")
-		link(rel="stylesheet" href="src/css/style.css")
-		link(rel="stylesheet" href="src/fonts/my-font/style.css")
-		title Головна
-	body
+extends modules/base
+
+block vars
+	- siteTitle = 'Головна';
+
+block content
 		div.grid__body.wrapper
 			include modules/header
-				
-
-			div.container
-			
-				div.card
-					div.circle
-						h2 Текст
-					div.content
-						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, fuga vitae saepe iste ea! Fuga.
-						a(href="") Читати далі
-
-				div.card
-					div.circle
-						h2 Текст
-					div.content
-						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, fuga vitae saepe iste ea! Fuga.
-						a(href="") Читати далі
-
-				div.card
-					div.circle
-						h2 Навчання
-					div.content
-						p Опис
-						a(href="teaching.html") Читати далі
-
-			div.mobile-container
-				div.slider
-				
-					div.slider__item
-						div.card
-							div.circle
-								h2 01
-							div.content
-								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, fuga vitae saepe iste ea! Fuga.
-								a(href="") Читати далі
-
-					div.slider__item
-						div.card
-							div.circle
-								h2 01
-							div.content
-								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, fuga vitae saepe iste ea! Fuga.
-								a(href="") Читати далі
-
-					div.slider__item
-						div.card
-							div.circle
-								h2 01
-							div.content
-								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, fuga vitae saepe iste ea! Fuga.
-								a(href="") Читати далі
-
-				ul.mobile-navigation
-					li
-						a.active Головна
-
+			include modules/card
 			include modules/footer
 
 		script(src="https://code.jquery.com/jquery-3.6.0.min.js")

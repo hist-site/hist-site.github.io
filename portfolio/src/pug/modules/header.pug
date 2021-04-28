@@ -1,9 +1,12 @@
+- var menuItems = 2;
+- var menuValues = ['Головна', 'Навчання'];
+- var menuLinkItem = ['index.html', 'teaching.html'];
+
 section
 	header.grid-header
-		a(href="#").logo Портфоліо
+		a(href="index.html").logo Портфоліо
 		div.toggle
 		ul.navigation
-			li
-				a(href="#").active Головна
-			li
-				a(href="teaching.html") Навчання
+			- for (var x = 0; x < menuItems; x++)
+				li
+					a(href=menuLinkItem[x]) #{menuValues[x]}
