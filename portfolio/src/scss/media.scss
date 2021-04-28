@@ -8,10 +8,6 @@
 		display: none;
 	}
 
-	.mobile-navigation {
-		display: none;
-	}
-
 	.mobile-navigation.active {
 		position: absolute;
 		top: 0;
@@ -33,7 +29,7 @@
 	}
 
 	.mobile-navigation li a {
-		font-size: 6em;
+		font-size: 4em;
 		color: #f9fbf3;
 		font-weight: 600;
 		text-decoration: none;
