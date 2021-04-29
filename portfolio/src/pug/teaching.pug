@@ -4,35 +4,37 @@ block vars
 	- siteTitle = 'Навчання';
 
 block content
-		div.grid__body.wrapper
+		div.grid__body_teaching.wrapper
 			include modules/header
 				
 
 			div.grid-teaching-container.container
-				div.container-content
-				div.side-bar
-					div.menu
-
-						div.item
+				.container-content
+					#background
+						.acardion__body
+							acardion__item
+								h1 Заголовок
+					
+				.side-bar
+					.menu
+						.item
 							a.sub-btn
 								i.mf-html5
 								| Html властивості
-							div.sub-menu
+							.sub-menu
 
-						div.item
+						.item
 							a.sub-btn
 								i.mf-css3
 								| Css властивості
-							div.sub-menu
-								a(href="#").sub-item Background
+							.sub-menu
+								a(href="#background").sub-item Background
 
-						div.item
+						.item
 							a.sub-btn
 								i.mf-js
 								| Js властивості
-							div.sub-menu
-
-			include modules/footer
+							.sub-menu
 
 		script(src="https://code.jquery.com/jquery-3.6.0.min.js")
 		script(src="src/js/app.js")

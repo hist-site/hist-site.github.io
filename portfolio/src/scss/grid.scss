@@ -8,6 +8,15 @@
 		"footer";
 }
 
+.grid__body_teaching {
+    display: grid;
+
+    grid-template: minmax(75px, auto) 1fr / 1fr;
+    grid-template-areas:
+		"header"
+		"container";
+}
+
 .grid__item {
     display: flex;
 }
