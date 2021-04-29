@@ -8,9 +8,8 @@ header {
 		font-size: 1.8em;
 		letter-spacing: 1px;
 		padding: 8px 18px;
-		background: #5f0074;
 		border-radius: 40px;
-		box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+		box-shadow: inset 0rem 0px 1rem 0.3rem rgba(0, 0, 0, .3);
 		margin: auto;
 	}
 }
@@ -42,7 +41,6 @@ header {
 				margin-left: 10px;
 				text-decoration: none;
 				padding: 8px 18px;
-				user-select: none;
 			}
 		}
 	}
@@ -50,9 +48,8 @@ header {
 
 header ul li a.active,
 header ul li a:hover {
-	background: #5f0074;
 	border-radius: 40px;
-	box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+	box-shadow: inset 0rem 0px 1rem 0.3rem rgba(0, 0, 0, .3);
 }
 
 .mobile-navigation {
@@ -209,8 +206,8 @@ header ul li a:hover {
 	line-height: 50px;
 	align-items: center;
 	border-radius: 30px;
-	background: #5f0074;
 	transition: .5s;
+	box-shadow: inset 0rem 0px 1rem 0.3rem rgba(0, 0, 0, .3);
 }
 
 .side-bar .menu .item a:hover {
@@ -234,7 +231,6 @@ header ul li a:hover {
 
 .side-bar .menu .item .sub-menu a {
 	padding-left: 40px;
-	box-shadow: inset 0px 3px 2px 1px rgba(0, 0, 0, .4);
 }
 
 .main {
@@ -343,6 +339,84 @@ header ul li a:hover {
 
 .slider {
 	min-width: 0;
+}
+
+.accordion-item {
+    background: #341a3d;
+    border-right: .4em;
+    margin-bottom: 1px;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+    border-radius: 30px;
+}
+
+.accordion-link {
+    font-size: 2rem;
+    color: #f9fbf3;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: inset -0.5rem 0px 1rem 0.3rem rgb(0, 0, 0, .3);
+    border-radius: 30px
+}
+
+.accordion-link i {
+    color: #f9fbf3;
+    padding: .5rem;
+}
+
+.accordion-link .mf-remove {
+    display: none;
+}
+
+.accordion-item a.sub-title {
+	width: 100%;
+	display: block;
+	padding: 1rem;
+	font-size: 1.5rem;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    color: #f9fbf3;
+    font-size: 1.4rem;
+    transition: max-height 650ms;
+    border-radius: 30px;
+    box-shadow: inset -0.5rem 0px 1rem 0.3rem rgb(0, 0, 0, .3);
+}
+
+.answer::before {
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background: #5f0074;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 30px;
+}
+
+.answer p {
+    color: #f9fbf3;
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+
+.accordion-item:target .answer {
+    max-height: 20rem;
+}
+
+.accordion-link:target .mf-add {
+    display: none;
+}
+
+.accordion-link:target .mf-remove {
+    display: block;
 }
 
 @import "default";
