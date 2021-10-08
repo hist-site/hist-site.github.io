@@ -1,0 +1,15 @@
+extends modules/base
+
+block vars
+	- siteTitle = 'Головна';
+
+block content
+		div.grid__body.wrapper
+			include modules/header
+			include modules/card
+			include modules/footer
+
+		script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+		script(src="src/js/slick.min.js")
+		script(src="src/js/slider.js")
+		script(src="src/js/app.js")

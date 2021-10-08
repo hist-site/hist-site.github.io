@@ -1,0 +1,52 @@
+// unstyle
+@import './functions';
+@import './variables';
+//
+@mixin colorMap($list) {
+    @each $colorKey,
+    $color in $list {
+        @if $color==white {
+            .white {
+                background: #ffffff
+            }
+        }
+        @else if $color==black {
+            .black {
+                background: #000000
+            }
+        }
+        @else {
+            @each $listKey in $colors-level {
+                @if $listKey<500 {
+                    .#{$colorKey}-#{$listKey} {
+                        background: tint($color, 100% - (($listKey / 10)*2))
+                    }
+                }
+                @else if $listKey>500 {
+                    .#{$colorKey}-#{$listKey} {
+                        background: shade($color, -100% + (($listKey / 10)* 2))
+                    }
+                }
+                @else {
+                    .#{$colorKey}-#{$listKey} {
+                        background: $color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin unstyle($tag) {
+    @if $tag==ul {
+        margin: 0 0;
+        padding-left: 0;
+        list-style: none;
+    }
+    @else if $tag==a {
+        text-decoration: none;
+    }
+    @else if $tag==p {
+        margin: 0;
+    }
+}

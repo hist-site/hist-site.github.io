@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Щоденник</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="page1">
+            <header class="header">
+                <div class="header__container container">
+                    <h1 class="header__container__title weekday">
+
+                    </h1>
+                </div>
+            </header>
+
+            <main class="main">
+                <div class="main__container container">
+                    <div class="main__container__table">
+                        <ol class="main__container__table__lesson-list">
+
+                        </ol>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <div class="footer__container container">
+                    <a class="menu-btn" href="https://nz.ua/"><img class="btn-img" src="https://nz.ua/images/logo.png"></a>
+
+                    <button class="menu-btn calendar-btn"><img src="./assets/img/calendar-week-solid.svg"></button>
+
+                    <button class="menu-btn time-btn"><img src="./assets/img/clock-regular.svg"></button>
+                </div>
+            </footer>
+
+        </div>
+
+        <div class="menu">
+            <a class="monday">Пн</a>
+            <!-- Кнопка розкладу на понеділок -->
+            <a class="tuesday">Вт</a>
+            <!-- Кнопка розкладу на вівторок -->
+            <a class="wednesday">Ср</a>
+            <!-- Кнопка розкладу на середу -->
+            <a class="thursday">Чт</a>
+            <!-- Кнопка розкладу на четвер -->
+            <a class="friday">Пт</a>
+            <!-- Кнопка розкладу на п'ятницю -->
+            <a class="menu-btnOff"><img src="./assets/img/times-circle-regular.svg"></a>
+            <!-- Кнопка закриття меню -->
+        </div>
+
+        <div class="page2">
+            <header class="header">
+                <div class="header__container container">
+                    <h1 class="header__container__title">
+                        Розклад дзвінків
+                    </h1>
+                </div>
+            </header>
+
+            <main class="main">
+                <div class="main__container container">
+
+                    <div class="main__container__time">
+                        <h1 id="clock">00:00</h1>
+                    </div>
+
+                    <div class="main__container__table">
+                        <ol class="main__container__table__lesson-list">
+
+                        </ol>
+                    </div>
+
+                </div>
+            </main>
+
+            <footer class="footer">
+                <div class="footer__container container">
+                    <button class="menu-btn time-close-btn">
+                        <img src="./assets/img/times-circle-regular.svg">
+                    </button>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>

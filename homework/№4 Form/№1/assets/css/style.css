@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #202020;
+}
+
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    justify-content: flex-end;
+}
+
+.input-group:not(:last-child) {
+    padding-right: 15px;
+}
+
+.card-details {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 450px;
+    color: #466c6f;
+    background: #9fcdcd;
+    border-radius: 15px;
+}
+
+.card-details::before {
+    content: 'Credit card details';
+    position: absolute;
+    top: 20px;
+    left: -25px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    padding-left: 60px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #db6422;
+}
+
+.card-details::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    display: flex;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/moon_flag.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 120px;
+    background-position-y: 85px;
+    border-radius: 15px;
+}
+
+.card-details__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 60%;
+    height: 100%;
+    padding: 60px 30px;
+}
+
+.card-details-label {
+    margin-bottom: 7px;
+}
+
+.card-details-input {
+    width: 100%;
+    padding: 15px 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background: #aad2d2;
+    border: none;
+    border-bottom: 1px solid #466c6f;
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+    margin: 0;
+}

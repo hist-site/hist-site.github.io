@@ -1,0 +1,104 @@
+.main__container {
+    padding: 0 10px;
+}
+
+.main__container__body__tabs {
+    display: flex;
+}
+
+.main__container__body__tabs__item {
+    padding: 15px 25px;
+    color: #17a2b8;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    transition: all .4s;
+}
+
+.main__container__body__tabs__item:hover,
+.tab-active {
+    position: relative;
+    color: #000;
+    border-color: #d1d1d1;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab-active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+
+.main__container__body__tabs-body {
+    border-top: 1px solid #d1d1d1;
+}
+
+.main__container__body__tabs-body__tab__header {
+    height: 150px;
+    padding: 20px;
+}
+
+.main__container__body__tabs-body__tab__header__container {
+    display: grid;
+    padding: 15px 15px;
+    grid-template-columns: 180px 180px 360px 150px;
+}
+
+.main__container__body__tabs-body__tab__header__container__block {}
+
+.main__container__body__tabs-body__tab__header__container__block__title {
+    color: #d1d1d1;
+    font-size: 16px;
+}
+
+.main__container__body__tabs-body__tab__header__container__block__subject {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.main__container__body__tabs-body__tab__header__container__block__subject-input {
+    width: 325px;
+    margin-top: 15px;
+    padding: 9px 10px;
+    font-size: 18px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+}
+
+.main__container__body__tabs-body__tab__header__container__block__subject-btn {
+    margin-top: 15px;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.main__container__body__table {
+    display: flex;
+    flex-direction: column;
+}
+
+.t-row {
+    display: grid;
+    grid-template: repeat(1, 60px) / 60px 20% 10% 15.5% 15% 19% 1fr;
+    align-items: center;
+}
+
+.main__container__body__table__header {
+    background: #17a2b850;
+    color: #fff;
+    font-weight: 100;
+}
+
+.main__container__body__table__row {
+    grid-template: repeat(1, 60px) / 40px 21.5% 7.7% 17% 17% 12% 1fr;
+    padding: 0 20px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.main__container__body__table__row span {
+    display: flex;
+}

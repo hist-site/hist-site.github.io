@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/* root
+============================================================ */
+:root {
+  /* background */
+  --w-default-bg-1: #4f11ba;
+  --w-default-bg-2: #202020;
+  --w-default-bg-3: #292929;
+  /* font */
+  --w-font-family-sans-serif: $font-family-sans-serif ;
+}
+
+/* normalize
+──────────────────────────────────────────────────────────── */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji);
+}
+
+/* body#wrapped-body
+──────────────────────────────────────────────────────────── */
+/* body#wrapped-body :root */
+:root {
+  /* color */
+  --w-body-c-1: #fff;
+  /* background */
+  --w-body-bg-1: #202020;
+  --w-body-bg-2: #4f11ba;
+  --w-body-bg-3: #292929;
+}
+
+/* body#wrapped-body | №1 */
+body#wrapped-body {
+  color: var(--w-body-c-1);
+  font-size: 1rem;
+  background-color: var(--w-body-bg-1);
+}
+body#wrapped-body > header,
+body#wrapped-body > main,
+body#wrapped-body > footer {
+  width: 100%;
+  padding: 0.75rem 0;
+}
+body#wrapped-body > header > *,
+body#wrapped-body > main > *,
+body#wrapped-body > footer > * {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+}
+@media (min-width: 1400px) {
+  body#wrapped-body > header > *,
+body#wrapped-body > main > *,
+body#wrapped-body > footer > * {
+    max-width: 1380px;
+  }
+}
+body#wrapped-body > header,
+body#wrapped-body > footer {
+  background: var(--w-body-bg-2);
+}
+
+/* #wrapped-body | №2 */
+body#wrapped-body > div {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+body#wrapped-body > div > aside {
+  width: 15%;
+}
+body#wrapped-body > div > main {
+  width: 100%;
+  background-color: var(--w-body-bg-3);
+}
+body#wrapped-body > div > aside,
+body#wrapped-body > div main {
+  padding: 0.75rem 0;
+}
+body#wrapped-body > div > aside > *,
+body#wrapped-body > div main > * {
+  padding: 0 0.75rem;
+}
+@media (min-width: 1400px) {
+  body#wrapped-body > div {
+    max-width: 1380px;
+  }
+}
+
+/* nav#wrapped-navbar
+──────────────────────────────────────────────────────────── */
+/* nav#wrapped-navbar :root */
+:root {
+  /* color */
+  --w-navbar-c-1: #fff;
+  --w-navbar-c-2: #ffffffbb;
+  /* background */
+  --w-navbar-bg-1: #4f11ba;
+}
+
+/* nav#wrapped-navbar | №1 */
+nav#wrapped-navbar {
+  width: 100%;
+}
+nav#wrapped-navbar > div {
+  display: flex;
+  align-items: center;
+}
+nav#wrapped-navbar > div > ul {
+  display: flex;
+  margin: 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+nav#wrapped-navbar > div > ul > li {
+  padding: 0.5rem;
+}
+nav#wrapped-navbar > div > ul > li > a {
+  transition: color 0.4s;
+  color: var(--w-navbar-c-2);
+  text-decoration: none;
+}
+nav#wrapped-navbar > div > ul > li > a:hover {
+  color: var(--w-navbar-c-1);
+}
+nav#wrapped-navbar > div > ul > li > a.active {
+  color: var(--w-navbar-c-1);
+  font-weight: 600;
+}
+
+/* nav#wrapped-navbar | №2 */
+nav#wrapped-navbar > div > a {
+  color: var(--w-navbar-c-1);
+  font-size: 2.5625rem;
+  text-decoration: none;
+}
+/* nav#wrapped-navbar#v2 | №3 */
+nav#wrapped-navbar[date-w-version="2"] > div > ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: var(--w-navbar-c-1);
+  font-size: 1.2rem;
+  margin: 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+nav#wrapped-navbar[date-w-version="2"] > div > ul > li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+nav#wrapped-navbar[date-w-version="2"] > div > ul > li a {
+  display: flex;
+  padding: 5px;
+  font-size: 2.5rem;
+  background: var(--w-navbar-bg-1);
+  border-radius: 1000px;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  z-index: 3;
+  text-decoration: none;
+}
+nav#wrapped-navbar[date-w-version="2"] > div > ul > li p {
+  position: absolute;
+  bottom: -95%;
+  padding: 3px 10px;
+  font-weight: 500;
+  background: var(--w-navbar-bg-1);
+  border-radius: 1000px;
+  pointer-events: none;
+  transition: 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  z-index: 2;
+  opacity: 0;
+  margin: 0;
+}
+nav#wrapped-navbar[date-w-version="2"] > div > ul > li:hover a {
+  color: var(--w-navbar-c-1);
+  box-shadow: 0 0 0 10px #202020;
+  transform: translateY(30%);
+}
+nav#wrapped-navbar[date-w-version="2"] > div > ul > li:hover p {
+  bottom: -100%;
+  opacity: 1;
+}
+nav#wrapped-navbar[date-w-version="2"] > div > ul > li::before {
+  content: "";
+  position: absolute;
+  left: -60%;
+  bottom: -23%;
+  width: 20px;
+  height: 24px;
+  pointer-events: none;
+  border-bottom-right-radius: 1000px;
+  box-shadow: 20px 20px 0 20px transparent;
+  transition: 0.05s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+nav#wrapped-navbar[date-w-version="2"] > div > ul > li::after {
+  content: "";
+  position: absolute;
+  right: -60%;
+  bottom: -23%;
+  width: 20px;
+  height: 24px;
+  pointer-events: none;
+  border-bottom-left-radius: 1000px;
+  box-shadow: -20px 20px 0 20px transparent;
+  transition: 0.05s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+nav#wrapped-navbar[date-w-version="2"] > div > ul > li:hover::before {
+  box-shadow: 20px 20px 0 20px #202020;
+}
+nav#wrapped-navbar[date-w-version="2"] > div > ul > li:hover::after {
+  box-shadow: -20px 20px 0 20px #202020;
+}

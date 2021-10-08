@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #d1d1d1;
+}
+
+body {
+    background: #202020;
+    height: 100vh;
+}
+
+form {
+    width: 400px;
+    height: 500px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

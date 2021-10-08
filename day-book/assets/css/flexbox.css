@@ -1,0 +1,33 @@
+.flex {
+	display: flex;
+}
+
+.flex_row{
+	display: inherit;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.flex_column{
+	display: inherit;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.flex-block__element_1{
+	display: inherit;
+	flex: 0 0 10%;
+}
+
+.flex-block__element_2{
+	display: inherit;
+	flex: 1 1 auto;
+}
+
+.flex-block__element_3{
+	display: inherit;
+	flex: 0 0 10%;
+}

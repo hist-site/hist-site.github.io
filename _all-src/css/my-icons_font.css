@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'my-font';
+  src:  url('../fonts/my-icons_font/my-font.eot?7h0ejp');
+  src:  url('../fonts/my-icons_font/my-font.eot?7h0ejp#iefix') format('embedded-opentype'),
+    url('../fonts/my-icons_font/my-font.ttf?7h0ejp') format('truetype'),
+    url('../fonts/my-icons_font/my-font.woff?7h0ejp') format('woff'),
+    url('../fonts/my-icons_font/my-font.svg?7h0ejp#my-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="my-font__"]::before, [class*=" my-font__"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'my-font' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.my-font__telegram:before {
+  content: "\e903";
+}
+.my-font__instagram:before {
+  content: "\e904";
+}
+.my-font__html5:before {
+  content: "\e900";
+}
+.my-font__css3:before {
+  content: "\e901";
+}
+.my-font__js:before {
+  content: "\e902";
+}
+.my-font__menu:before {
+  content: "\e905";
+}
+.my-font__menu-close:before {
+  content: "\e906";
+}

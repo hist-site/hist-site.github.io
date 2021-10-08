@@ -1,0 +1,37 @@
+extends modules/base
+
+block vars
+	- siteTitle = 'Навчання';
+
+block content
+		div.grid__body_teaching.wrapper
+			include modules/header
+				
+
+			div.grid-teaching-container.container
+				.container-content
+					
+				.side-bar
+					.menu
+						.item
+							a.sub-btn
+								i.mf-html5
+								| Html властивості
+							.sub-menu
+
+						.item
+							a.sub-btn
+								i.mf-css3
+								| Css властивості
+							.sub-menu
+								a(href="cssbackground.html").sub-item Background
+
+						.item
+							a.sub-btn
+								i.mf-js
+								| Js властивості
+							.sub-menu
+
+		script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+		script(src="src/js/app.js")
+		script(src="src/js/side-menu.js")

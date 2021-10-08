@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Библиотека</title>
+
+    <!-- css
+    ------------------------------------------------------------ -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/hist-form.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <h1 class="header__title title">Библиотека с формами</h1>
+        </header>
+
+        <main class="main">
+
+            <section class="inputs">
+                <h1 class="inputs__title title">Inputs</h1>
+                <input class="hf-input" placeholder="Введите текст" type="text" name="standart" id="">
+                <input class="hf-input valid" type="text" name="valid" id="" value="valid">
+                <input class="hf-input invalid" type="text" name="invalid" id="" value="invalid">
+            </section>
+
+            <hr>
+
+            <section class="check-boxes">
+                <h1 class="check-boxes__title title">Check Boxes</h1>
+
+                <div class="d-flex">
+                    <label class="hf-check" for="checkbox1">
+                        <input class="hf-check__input" type="checkbox" name="standart" id="checkbox1">
+                        <span class="hf-check__box"></span>
+                        Text
+                    </label>
+
+
+                    <label class="hf-check" for="checkbox2">
+                        <input class="hf-check__input" type="checkbox" name="checked" id="checkbox2" checked>
+                        <span class="hf-check__box"></span>
+                        Text
+                    </label>
+                </div>
+
+            </section>
+
+            <hr>
+
+            <section class="radio-buttons">
+                <h1 class="radio-buttons__title title">Radio Buttons</h1>
+
+                <div class="d-flex">
+                    <h2>Gender:</h2>
+
+                    <label class="hf-radio" for="radio1">
+                        <input class="hf-radio__input" type="radio" name="gender" id="radio1">
+                        <span class="hf-radio__btn"></span>
+                        Mele
+                    </label>
+
+                    <label class="hf-radio" for="radio2">
+                        <input class="hf-radio__input" type="radio" name="gender" id="radio2" checked>
+                        <span class="hf-radio__btn"></span>
+                        Famele
+                    </label>
+
+                </div>
+
+            </section>
+
+            <hr>
+
+            <section class="buttons">
+                <h1 class="buttons__title title">Buttons</h1>
+
+                <div class="d-flex">
+
+                    <button class="hf-button-s1">Active</button>
+                    <button class="hf-button-s1 hover">Hover</button>
+                    <button class="hf-button-s1 disable" disabled>Disable</button>
+
+                    <button class="hf-button-s2">Active</button>
+                    <button class="hf-button-s2 hover">Hover</button>
+                    <button class="hf-button-s2 disable" disabled>Disable</button>
+
+                    <button class="hf-button-circle-s1"></button>
+                    <button class="hf-button-circle-s2"></button>
+
+                </div>
+
+            </section>
+
+            <hr>
+
+            <section class="text-area">
+                <h1 class="reaxt-area__title title">Text Area</h1>
+
+                <textarea class="hf-textarea" placeholder="Enter some text..." name="" id="" cols="30" rows="10"></textarea>
+
+            </section>
+
+        </main>
+
+    </div>
+</body>
+
+</html>

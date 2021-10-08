@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "wrapped-icons";
+    src: url("./fonts/wrapped-icons.woff?a4f2f529cb5d896418734e088b85fed8") format("woff"), url("./fonts/wrapped-icons.woff2?a4f2f529cb5d896418734e088b85fed8") format("woff2");
+}
+
+[class^="w-"]::before,
+[class*="w-"]::before {
+    display: inline-block;
+    font-family: wrapped-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.w-check::before {
+    content: "\f101";
+}
+
+.w-divide::before {
+    content: "\f102";
+}
+
+.w-equals::before {
+    content: "\f103";
+}
+
+.w-minus::before {
+    content: "\f104";
+}
+
+.w-home::before {
+    content: "\f105";
+}
+
+.w-plus::before {
+    content: "\f106";
+}
+
+.w-times::before {
+    content: "\f107";
+}
+
+.w-wrapped-in-css::before {
+    content: "\f108";
+}

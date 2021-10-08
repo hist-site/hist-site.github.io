@@ -1,0 +1,208 @@
+/* nav#wrapped-navbar
+──────────────────────────────────────────────────────────── */
+
+
+/* nav#wrapped-navbar :root */
+
+:root {
+    /* color */
+    --w-navbar-c-1: #fff;
+    --w-navbar-c-2: #ffffffbb;
+    /* background */
+    --w-navbar-bg-1: #4f11ba;
+}
+
+//  ! ─ Нужно для нормальной работы;
+//  ? ─ Не обязательно в использовании;
+//  + ─ Измененная конструкция
+// ────────────────────────────────────────────────────────────
+//  nav#wrapped-navbar | №1
+//      ┌──────────────────────────────────────────────┐
+//      | !! Правильная структура для использования !! |
+//      └──────────────────────────────────────────────┘
+//
+//                    ! nav#wrapped-navbar
+//                      |
+//                    ! └── div
+//                          | 
+//                        ! └── ul
+//                              | 
+//                            ! └── li
+//                                  | 
+//                                ! └── a, a.active
+//
+// ────────────────────────────────────────────────────────────
+//
+//
+
+/* nav#wrapped-navbar | №1 */
+
+nav#wrapped-navbar {
+    width: 100%;
+    >div {
+        display: flex;
+        align-items: center;
+        >ul {
+            display: flex;
+            @include unstyle(ul);
+            >li {
+                padding: .5rem;
+                >a {
+                    transition: color .4s;
+                    color: var(--w-navbar-c-2);
+                    @include unstyle(a);
+                    &:hover {
+                        color: var(--w-navbar-c-1);
+                    }
+                }
+                >a.active {
+                    color: var(--w-navbar-c-1);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+//  ! ─ Нужно для нормальной работы;
+//  ? ─ Не обязательно в использовании;
+//  + ─ Измененная конструкция
+// ────────────────────────────────────────────────────────────
+//  nav#wrapped-navbar | №2
+//      ┌──────────────────────────────────────────────┐
+//      | !! Правильная структура для использования !! |
+//      └──────────────────────────────────────────────┘
+//
+//                    ! nav#wrapped-navbar
+//                      |
+//                    ! └── div
+//                       +! ├── a
+//                          | ? └── img, i
+//                          |
+//                        ! └── ul
+//                            ! └── li
+//                                ! └── a, a.active
+//
+// ────────────────────────────────────────────────────────────
+//
+//
+
+/* nav#wrapped-navbar | №2 */
+
+nav#wrapped-navbar {
+    >div {
+        >a {
+            color: var(--w-navbar-c-1);
+            font-size: 2.5625rem;
+            @include unstyle(a);
+            >img,
+            >i {}
+        }
+    }
+}
+
+//  ! ─ Нужно для нормальной работы;
+//  ? ─ Не обязательно в использовании;
+//  + ─ Измененная конструкция
+// ────────────────────────────────────────────────────────────
+//  nav#wrapped-navbar | №2
+//      ┌──────────────────────────────────────────────┐
+//      | !! Правильная структура для использования !! |
+//      └──────────────────────────────────────────────┘
+//
+//                    ! nav#wrapped-navbar
+//                      |
+//                    ! └── div
+//                       +! ├── a
+//                          | ? └── img, i
+//                          |
+//                        ! └── ul
+//                            ! └── li
+//                                ! └── a, a.active
+//
+// ────────────────────────────────────────────────────────────
+//
+//
+
+/* nav#wrapped-navbar#v2 | №3 */
+
+nav#wrapped-navbar[date-w-version="2"] {
+    >div {
+        >ul {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            color: var(--w-navbar-c-1);
+            font-size: 1.2rem;
+            @include unstyle(ul);
+            >li {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                padding: 0;
+                a {
+                    display: flex;
+                    padding: 5px;
+                    font-size: 2.5rem;
+                    background: var(--w-navbar-bg-1);
+                    border-radius: 1000px;
+                    transition: 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+                    z-index: 3;
+                    @include unstyle(a);
+                }
+                p {
+                    position: absolute;
+                    bottom: -95%;
+                    padding: 3px 10px;
+                    font-weight: 500;
+                    background: var(--w-navbar-bg-1);
+                    border-radius: 1000px;
+                    pointer-events: none;
+                    transition: 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+                    z-index: 2;
+                    opacity: 0;
+                    @include unstyle(p);
+                }
+                &:hover a {
+                    color: var(--w-navbar-c-1);
+                    box-shadow: 0 0 0 10px #202020;
+                    transform: translateY(30%);
+                }
+                &:hover p {
+                    bottom: -100%;
+                    opacity: 1;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -60%;
+                    bottom: -23%;
+                    width: 20px;
+                    height: 24px;
+                    pointer-events: none;
+                    border-bottom-right-radius: 1000px;
+                    box-shadow: 20px 20px 0 20px transparent;
+                    transition: .05s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -60%;
+                    bottom: -23%;
+                    width: 20px;
+                    height: 24px;
+                    pointer-events: none;
+                    border-bottom-left-radius: 1000px;
+                    box-shadow: -20px 20px 0 20px transparent;
+                    transition: .05s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+                }
+                &:hover::before {
+                    box-shadow: 20px 20px 0 20px #202020;
+                }
+                &:hover::after {
+                    box-shadow: -20px 20px 0 20px #202020;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/hist-form.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/attecdance.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+
+                <div class="header__container__left">
+                    <nav class="header__container__left__nav">
+
+                        <a class="header__container__left__nav__item logo" href="#">
+                            <i class="fas fa-user-graduate"></i>
+                        </a>
+
+                        <a class="header__container__left__nav__item active" href="#">
+                            Attecdance
+                        </a>
+
+                        <a class="header__container__left__nav__item" href="schedule.html">
+                            Schedule
+                        </a>
+
+                        <a class="header__container__left__nav__item" href="#">
+                            Homework
+                        </a>
+
+                    </nav>
+                </div>
+
+                <div class="header__container__right">
+
+                    <button class="header__container__right__btn">
+                        <i class="fas fa-bell"></i>
+                    </button>
+
+                    <button class="header__container__right__btn">
+                        <i class="fas fa-user-circle"></i>
+                    </button>
+
+                    <button class="header__container__right__btn">
+                        <i class="fas fa-door-open"></i>
+                    </button>
+
+                </div>
+
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main__container">
+
+                <div class="main__container__header">
+                    <h1 class="main__container__header__title">23 April, Tusdey</h1>
+                </div>
+
+                <div class="main__container__body">
+
+                    <nav class="main__container__body__tabs">
+                        <a class="main__container__body__tabs__item tab-active" href="#">1 Lesson</a>
+                        <a class="main__container__body__tabs__item" href="#">2 Lesson</a>
+                        <a class="main__container__body__tabs__item" href="#">3 Lesson</a>
+                        <a class="main__container__body__tabs__item" href="#">4 Lesson</a>
+                        <a class="main__container__body__tabs__item" href="#">5 Lesson</a>
+                        <a class="main__container__body__tabs__item" href="#">6 Lesson</a>
+                        <a class="main__container__body__tabs__item" href="#">7 Lesson</a>
+                        <a class="main__container__body__tabs__item" href="#">8 Lesson</a>
+                    </nav>
+
+                    <div class="main__container__body__tabs-body">
+                        <div class="main__container__body__tabs-body__tab">
+                            <div class="main__container__body__tabs-body__tab__header">
+                                <div class="main__container__body__tabs-body__tab__header__container">
+                                    <div class="main__container__body__tabs-body__tab__header__container__block">
+                                        <h3 class="main__container__body__tabs-body__tab__header__container__block__title">Group</h3>
+                                        <p class="main__container__body__tabs-body__tab__header__container__block__subject">F11</p>
+                                    </div>
+                                    <div class="main__container__body__tabs-body__tab__header__container__block">
+                                        <h3 class="main__container__body__tabs-body__tab__header__container__block__title">Subject</h3>
+                                        <p class="main__container__body__tabs-body__tab__header__container__block__subject">HTML & CSS</p>
+                                    </div>
+                                    <div class="main__container__body__tabs-body__tab__header__container__block">
+                                        <h3 class="main__container__body__tabs-body__tab__header__container__block__title">Lesson topic</h3>
+                                        <input class="main__container__body__tabs-body__tab__header__container__block__subject-input" type="text">
+                                    </div>
+                                    <div class="main__container__body__tabs-body__tab__header__container__block">
+                                        <h3 class="main__container__body__tabs-body__tab__header__container__block__title">Homework</h3>
+                                        <button class="main__container__body__tabs-body__tab__header__container__block__subject-btn btn">Add Homework</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="main__container__body__table">
+
+                        <li class="main__container__body__table__header t-row">
+                            <span></span>
+                            <span>Name</span>
+                            <span>GPA</span>
+                            <span>Is present</span>
+                            <span>Test</span>
+                            <span>Classwork</span>
+                            <span>Comment</span>
+                        </li>
+
+                        <li class="main__container__body__table__row t-row">
+                            <span>1</span>
+                            <span>Розанов Владислав</span>
+                            <span>?</span>
+                            <span>
+                                <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user1-present">
+                                    <span class="hf-radio__btn radio-present"></span>
+                            </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user1-present">
+                                    <span class="hf-radio__btn radio-late"></span>
+                                </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user1-present">
+                                    <span class="hf-radio__btn radio-absent"></span>
+                                </label>
+                            </span>
+                            <span>
+                                <select class="select" name="user1-test" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <select class="select" name="user1-classwork" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <textarea class="text-area" name="user1-comment"></textarea>
+                            </span>
+                        </li>
+
+                        <li class="main__container__body__table__row t-row">
+                            <span>2</span>
+                            <span>Дементьєв Богдан</span>
+                            <span>?</span>
+                            <span>
+                                <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user2-present">
+                                    <span class="hf-radio__btn radio-present"></span>
+                            </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user2-present">
+                                    <span class="hf-radio__btn radio-late"></span>
+                                </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user2-present">
+                                    <span class="hf-radio__btn radio-absent"></span>
+                                </label>
+                            </span>
+                            <span>
+                                <select class="select" name="user2-test" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <select class="select" name="user2-classwork" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <textarea class="text-area" name="user2-comment"></textarea>
+                            </span>
+                        </li>
+
+                        <li class="main__container__body__table__row t-row">
+                            <span>3</span>
+                            <span>Семеняка Владислав</span>
+                            <span>?</span>
+                            <span>
+                                <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user3-present">
+                                    <span class="hf-radio__btn radio-present"></span>
+                            </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user3-present">
+                                    <span class="hf-radio__btn radio-late"></span>
+                                </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user3-present">
+                                    <span class="hf-radio__btn radio-absent"></span>
+                                </label>
+                            </span>
+                            <span>
+                                <select class="select" name="user3-test" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <select class="select" name="user3-classwork" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <textarea class="text-area" name="user3-comment"></textarea>
+                            </span>
+                        </li>
+
+                        <li class="main__container__body__table__row t-row">
+                            <span>4</span>
+                            <span>Амбарцумян Сергій</span>
+                            <span>?</span>
+                            <span>
+                                <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user4-present">
+                                    <span class="hf-radio__btn radio-present"></span>
+                            </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user4-present">
+                                    <span class="hf-radio__btn radio-late"></span>
+                                </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user4-present">
+                                    <span class="hf-radio__btn radio-absent"></span>
+                                </label>
+                            </span>
+                            <span>
+                                <select class="select" name="user4-test" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <select class="select" name="user4-classwork" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <textarea class="text-area" name="user4-comment"></textarea>
+                            </span>
+                        </li>
+
+                        <li class="main__container__body__table__row t-row">
+                            <span>5</span>
+                            <span>Савісько Володимир</span>
+                            <span>?</span>
+                            <span>
+                                <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user5-present">
+                                    <span class="hf-radio__btn radio-present"></span>
+                            </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user5-present">
+                                    <span class="hf-radio__btn radio-late"></span>
+                                </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user5-present">
+                                    <span class="hf-radio__btn radio-absent"></span>
+                                </label>
+                            </span>
+                            <span>
+                                <select class="select" name="user5-test" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <select class="select" name="user5-classwork" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <textarea class="text-area" name="user5-comment"></textarea>
+                            </span>
+                        </li>
+
+                        <li class="main__container__body__table__row t-row">
+                            <span>6</span>
+                            <span>Волна Микола</span>
+                            <span>?</span>
+                            <span>
+                                <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user6-present">
+                                    <span class="hf-radio__btn radio-present"></span>
+                            </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user6-present">
+                                    <span class="hf-radio__btn radio-late"></span>
+                                </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user6-present">
+                                    <span class="hf-radio__btn radio-absent"></span>
+                                </label>
+                            </span>
+                            <span>
+                                <select class="select" name="user6-test" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <select class="select" name="user6-classwork" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <textarea class="text-area" name="user6-comment"></textarea>
+                            </span>
+                        </li>
+
+                        <li class="main__container__body__table__row t-row">
+                            <span>7</span>
+                            <span>Дубровський Даніїл</span>
+                            <span>?</span>
+                            <span>
+                                <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user7-present">
+                                    <span class="hf-radio__btn radio-present"></span>
+                            </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user7-present">
+                                    <span class="hf-radio__btn radio-late"></span>
+                                </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user7-present">
+                                    <span class="hf-radio__btn radio-absent"></span>
+                                </label>
+                            </span>
+                            <span>
+                                <select class="select" name="user7-test" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <select class="select" name="user7-classwork" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <textarea class="text-area" name="user7-comment"></textarea>
+                            </span>
+                        </li>
+
+                        <li class="main__container__body__table__row t-row">
+                            <span>8</span>
+                            <span>Манько Олександр</span>
+                            <span>10</span>
+                            <span>
+                                <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user8-present">
+                                    <span class="hf-radio__btn radio-present"></span>
+                            </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user8-present">
+                                    <span class="hf-radio__btn radio-late"></span>
+                                </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user8-present">
+                                    <span class="hf-radio__btn radio-absent"></span>
+                                </label>
+                            </span>
+                            <span>
+                                <select class="select" name="user8-test" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <select class="select" name="user8-classwork" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <textarea class="text-area" name="user8-comment"></textarea>
+                            </span>
+                        </li>
+
+                        <li class="main__container__body__table__row t-row">
+                            <span>9</span>
+                            <span>Баковський Денис</span>
+                            <span>?</span>
+                            <span>
+                                <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user9-present">
+                                    <span class="hf-radio__btn radio-present"></span>
+                            </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user9-present">
+                                    <span class="hf-radio__btn radio-late"></span>
+                                </label>
+                            <label class="hf-radio ">
+                                    <input class="hf-radio__input" type="radio" name="user9-present">
+                                    <span class="hf-radio__btn radio-absent"></span>
+                                </label>
+                            </span>
+                            <span>
+                                <select class="select" name="user9-test" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <select class="select" name="user9-classwork" id="">
+                                    <option value="none" hidden>-</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </span>
+                            <span>
+                                <textarea class="text-area" name="user9-comment"></textarea>
+                            </span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+</body>
+
+</html>

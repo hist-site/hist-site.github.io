@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Кодировка UTF-8 -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/flexbox.css">
+    <link rel="icon" href="./assets/img/favicon.svg">
+    <!-- Изабражение WEB странички -->
+    <title>Щоденник</title>
+    <!-- Заголовак -->
+</head>
+
+<body>
+    <div class="flex wrapper">
+        <div class="flex_column">
+            <!-- Header -->
+            <header class="flex-block__element_1 header anim_slide_bottom">
+                <div class="weekday">
+                    <h1>
+                        <!-- Js || Відправка дня тижня за допомогою renderDayBook() -->
+                    </h1>
+                </div>
+            </header>
+            <!-- //Header//-->
+
+            <!-- Body -->
+            <main class="flex-block__element_2 tables">
+                <div class="border anim_opacity">
+                    <div>
+                        <!-- Js || Відправка розкладу за допомогою renderDayBook() -->
+                    </div>
+                </div>
+            </main>
+
+            <footer class="flex-block__element_3 flex_row grid-menu menu-panel anim_slide_top">
+                <a class="menu-btn-nz" href="https://nz.ua/"><img src="https://nz.ua/images/logo.png"></a>
+                <!-- Кнопка відкриття сайту з електроним щоденником -->
+                <a class="menu-btnOn"><img src="./assets/img/calendar-week-solid.svg"></a>
+                <!-- Кнопка відкриття меню -->
+                <a class=" menu-btn-on"><img src="./assets/img/clock-regular.svg"></a>
+                <!-- Кнопка закриття => wrapper -->
+            </footer>
+            <!-- //Body// -->
+
+        </div>
+    </div>
+
+    <div class="menu">
+        <a class="monday">Пн</a>
+        <!-- Кнопка розкладу на понеділок -->
+        <a class="tuesday">Вт</a>
+        <!-- Кнопка розкладу на вівторок -->
+        <a class="wednesday">Ср</a>
+        <!-- Кнопка розкладу на середу -->
+        <a class="thursday">Чт</a>
+        <!-- Кнопка розкладу на четвер -->
+        <a class="friday">Пт</a>
+        <!-- Кнопка розкладу на п'ятницю -->
+        <a class="menu-btnOff"><img src="./assets/img/times-circle-regular.svg"></a>
+        <!-- Кнопка закриття меню -->
+    </div>
+
+    <!-- Page2 || Сторінка з розкладом дзвінків -->
+    <!-- Wrapper-time -->
+    <div class="flex wrapper-time">
+        <div class="flex_column">
+
+            <!-- Header -->
+            <div class="flex-block__element_1 header">
+                <h1>Розклад дзвінків</h1>
+            </div>
+            <!-- //Header// -->
+
+            <!-- Body -->
+            <div class="flex_column flex-block__element_2 tables">
+
+                <div class="time">
+                    <h1 id="clock">00:00</h1>
+                    <!-- Годиник -->
+                </div>
+
+                <div class="border">
+                    <div>
+                        <div>1. 8:30 - 9:15</div>
+                        <div>2. 9:25 - 10:10</div>
+                        <div>3. 10:30 - 11:15</div>
+                        <div>4. 11:35 - 12:20</div>
+                        <div>5. 12:40 - 13:25</div>
+                        <div>6. 13:35 - 14:20</div>
+                        <div>7. 14:25 - 15:10</div>
+                    </div>
+                </div>
+            </div>
+            <!-- //Body// -->
+
+            <a class="menu-btn-off">
+                <img src="./assets/img/times-circle-regular.svg">
+                <!-- Кнопка закриття => wrapper-time -->
+            </a>
+
+        </div>
+    </div>
+    <!-- //Wrapper-time// -->
+    <!-- //Page2// -->
+
+    <!-- Script -->
+    <script src="./assets/js/app.js"></script>
+    <!-- //Script// -->
+
+</body>
+
+</html>

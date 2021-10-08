@@ -1,0 +1,18 @@
+.main__container__header__btn {
+    margin: 0 20px;
+    text-transform: uppercase;
+    color: #17a2b8;
+    font-weight: 800;
+    background: transparent;
+    border: none;
+}
+
+.main__container__body__table {
+    display: grid;
+}
+
+.main__container__body__table__head.table-row,
+.main__container__body__table__item.table-row {
+    display: grid;
+    grid-template-columns: 150px repeat( 8, 1fr);
+}

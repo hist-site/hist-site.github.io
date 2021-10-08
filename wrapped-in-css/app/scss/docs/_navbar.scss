@@ -1,0 +1,20 @@
+/* navbar
+============================================================ */
+
+.navbar {
+    position: relative;
+    display: flex;
+    &-logo,
+    a {
+        text-decoration: none;
+    }
+    &-ul,
+    ul {
+        list-style: none;
+    }
+    &-sticky {
+        position: sticky;
+        top: 1rem;
+        display: block;
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+    <!-- css
+    -------------------------------------------------- -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="">
+
+            <div class="">
+                <label for="name">Ник</label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div class="">
+                <label for="email">Email</label>
+                <input type="temailext" name="email" id="email">
+            </div>
+
+            <div class="">
+                <label for="date">Др</label>
+                <input type="date" name="date" id="date">
+            </div>
+
+            <div class="">
+                <p>Пол</p>
+                <input type="radio" name="sex" id="man" value="Ламинат"><label for="man">Ламинат</label>
+                <br>
+                <input type="radio" name="sex" id="girl" value="Линолеум"><label for="girl">Линолеум</label>
+            </div>
+
+            <div>
+                <label for="city">Страна</label>
+                <input type="text" name="city" id="city" list="city-list">
+
+                <datalist id='city-list'>
+                    <option value="Черкассы">
+                    <option value="Москва">
+                    <option value="Киев">
+
+                </datalist>
+            </div>
+
+            <div class="">
+                <p>Тип героя</p>
+                <input type="radio" name="hero-type" id="" value="Воин"><label for="viewSticks-nomal">Воин</label>
+                <br>
+                <input type="radio" name="hero-type" id="" value="Лучник"><label for="viewSticks-taraining">Лучник</label>
+                <br>
+                <input type="radio" name="hero-type" id="" value="Маг"><label for="viewSticks-taraining">Маг</label>
+            </div>
+
+
+            <div class="">
+                <label for="gaming-experience">Опыт игрока</label>
+                <input type="number" name="gaming-experience" id="gaming-experience" min="0" max="60">
+            </div>
+
+            <div class="">
+                <p>Уровень розвития</p>
+                <label>
+                    <input type="checkbox" name="sushi" id="" value="1"> 1
+            </label>
+                <label>
+                    <input type="checkbox" name="sushi" id="" value="2">
+                    <span>2</span>
+            </label>
+                <label>
+                    <input type="checkbox" name="sushi" id="" value="3"> 3
+            </label>
+                <label>
+                    <input type="checkbox" name="sushi" id="" value="4"> 4
+            </label>
+            </div>
+
+            <div class="">
+                <button>Add</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

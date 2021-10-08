@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <!-- css 
+    ------------------------------------------------------------ -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class="contact-form" action="">
+            <h1 class="contact-form__title">Contact form</h1>
+            <p class="contact-form__sub-title">Please fill in your information and we'll be sending your order</p>
+
+            <div class="d-flex">
+                <label for="name">Your name</label>
+                <div class="">
+                    <input type="text" name="name" id="" placeholder="first name">
+                    <input type="text" name="surname" id="" placeholder="last name">
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <label for="">Your email</label>
+                <input type="email" name="email" id="" placeholder="your_mail@mail.com">
+            </div>
+
+            <div class="d-flex">
+                <label for="phone1">Phone*</label>
+                <div class="">
+                    <input type="number" name="phone1" id="" placeholder="000">
+                    <input type="number" name="phone2" id="" placeholder="000">
+                    <input type="number" name="phone3" id="" placeholder="0000">
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <label for="msg-sub">Message subject*</label>
+                <select name="msg-sub" id="">
+                    <option hidden value="theme selection">Еheme selection</option>
+                    <option value="Other">Other</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <div class="d-flex">
+                <label for="message" class="contact-form__lab-msg">Message*</label>
+                <textarea name="massage" id="" cols="100%" rows="4"></textarea>
+            </div>
+
+            <hr>
+
+            <button>Submit form</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

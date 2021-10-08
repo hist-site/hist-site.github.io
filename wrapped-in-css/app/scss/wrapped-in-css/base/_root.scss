@@ -1,0 +1,12 @@
+/* root
+============================================================ */
+
+@import '../../abstracts/variables';
+:root {
+    /* background */
+    --w-default-bg-1: #4f11ba;
+    --w-default-bg-2: #202020;
+    --w-default-bg-3: #292929;
+    /* font */
+    --w-font-family-sans-serif: $font-family-sans-serif
+}

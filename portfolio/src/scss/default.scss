@@ -1,0 +1,54 @@
+@import "variable";
+
+@font-face {
+	font-family: Nunito;
+	src: url(../fonts/Nunito/Nunito-Black.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+	-webkit-user-select: none;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: $color;
+	font-size: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+i {
+	color: $color;
+	font-size: 3rem;
+}
+
+section {
+	background: $bgColor2;
+	z-index: 1000;
+}
+
+header {
+	@include header-and-footer;
+}
+
+.wrapper {
+	background: $bgColor1;
+	min-height: 100vh;
+	font-size: 2rem;
+}
+
+footer {
+	@include header-and-footer;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}

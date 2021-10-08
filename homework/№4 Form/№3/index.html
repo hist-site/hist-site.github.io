@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <!-- css
+    ------------------------------------------------------------ -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class='regitration-form' action="">
+
+            <div class="regitration-form__container">
+                <div class="regitration-form__registration">
+                    <h2 class="regitration-form__registration__title title">Registration form</h2>
+
+                    <div class="inputs-block">
+
+                        <div class="d-flex-ac">
+                            <img class="input-img" src="./assets/icons/username.png" alt="username">
+                            <input class="reg-input" type="text" name="username" id="" placeholder="Username">
+                        </div>
+
+                        <div class="d-flex-ac">
+                            <img class="input-img" src="./assets/icons/email.png" alt="email">
+                            <input class="reg-input" type="text" name="email" id="" placeholder="Email address">
+                        </div>
+
+                        <div class="d-flex-ac reg-input-duo">
+                            <div class="reg-input-duo">
+                                <img class="input-img" src="./assets/icons/pswd.png" alt="pswd">
+                                <input class="reg-input" type="password" name="password" id="" placeholder="Password">
+                            </div>
+                            <input class="reg-input" type="password" name="confirm-password" id="" placeholder="Confirm password">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="regitration-form__personal">
+                    <h2 class="regitration-form__personal__title title">Personal details</h2>
+
+                    <div class="inputs-block">
+
+                        <div class="reg-input-duo">
+                            <input class="reg-input" type="text" name="first-name" id="" placeholder="First name">
+                            <input class="reg-input" type="text" name="last-name" id="" placeholder="Last name">
+                        </div>
+
+                        <div class="reg-input-duo">
+                            <select class="reg-input" name="gender" id="" pl>
+                                <option value="Gender" hidden>Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Famale">Famale</option>
+                            </select>
+                            <input class="reg-input" type="date" name="" id="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="regitration-form__checkbox">
+                <label class="regitration-form__checkbox__label" for="mailing"><input class="input-check" type="checkbox" name="mailing" id="">I want to receive mews and special offers</label>
+                <br>
+                <label class="regitration-form__checkbox__label" for="regulations"><input class="input-check" type="checkbox" name="regulations" id="">I agree with the Terms and Conditions</label>
+            </div>
+
+            <hr>
+
+            <button class="regitration-form__button">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

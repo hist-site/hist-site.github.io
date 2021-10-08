@@ -1,0 +1,226 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background: #202020;
+    font-family: 'Quicksand', sans-serif;
+    color: #404040;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: #fff;
+    width: 700px;
+    border-radius: 8px;
+    position: relative;
+    padding: 40px 30px;
+    height: 550px;
+}
+
+.card__avatar {
+    top: -120px;
+    margin: auto;
+    background: #fff;
+    position: relative;
+    width: 154px;
+    height: 154px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 4px;
+    margin-bottom: 15px;
+}
+
+.card__avatar img {
+    border: 3px solid #c30eb8;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.card__inner {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    top: -130px;
+}
+
+.card__inner__name {
+    font-weight: 100;
+    margin: 30px 0 0 0;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.card__inner__name__text {
+    color: #6944ff;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card__inner__job {
+    margin-bottom: 15px;
+}
+
+.card__inner__job__text {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #324e63;
+}
+
+.card__inner__location {
+    display: inline-flex;
+    color: #324e63;
+    padding: 0;
+    font-size: 18px;
+    height: 40px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.card__inner__location__loc {
+    position: relative;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.card__inner__location__loc::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #324e63;
+    display: block;
+    transition: all .4s;
+    left: -3px;
+    bottom: 0;
+}
+
+.card__inner__location__loc:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.icon-location {
+    width: 27px;
+    height: 27px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.profile-card-inf {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.profile-card-inf__item {
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card-inf__title {
+    font-weight: 700;
+    font-size: 27px;
+    color: #324e63;
+}
+
+.profile-card-inf__txt {
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+.profile-card-social {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-card-social__item {
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
+    margin: 15px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #405de6;
+    box-shadow: 0px 7px 30px rgba(43, 98, 169, 0.5);
+    position: relative;
+    font-size: 21px;
+    transition: all 0.3s;
+}
+
+.profile-card-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.profile-card__button {
+    border: none;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 19px;
+    margin: 15px 35px;
+    width: 200px;
+    border-radius: 50px;
+    min-height: 55px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.profile-card__button.button--blue {
+    background: linear-gradient(45deg, #1da1f2, #0e71c8);
+    box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.4);
+}
+
+.profile-card__button.button--orange {
+    background: linear-gradient(45deg, #d5135a, #f05924);
+    box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.35);
+}
+
+.profile-card__button.button--blue:hover {
+    transform: scale(1.1);
+}
+
+.profile-card__button.button--orange:hover {
+    transform: scale(1.1);
+}
