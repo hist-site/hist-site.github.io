@@ -30,17 +30,18 @@ const timeList = [
 
 
 
-weekday.innerHTML = distributionList[date.getDay()][0];
-const days = 0
 
-function renderDayBook() {
+
+function renderDayBook(days) {
+    table1.innerHTML = ''
+    weekday.innerHTML = distributionList[days][0];
     for (i = 0; i < distributionList[days][1].length; i++) {
         const li = document.createElement('li')
         li.innerHTML = distributionList[days][1][i]
         table1.appendChild(li)
     }
 };
-renderDayBook();
+renderDayBook(date.getDay())
 
 function renderTime() {
     for (i = 0; i < distributionList.length; i++) {
@@ -84,28 +85,28 @@ document.querySelector(".calendar-btn").addEventListener("click", () => {
     toggleClass(document.querySelector(".menu"), 'menu_active');
 });
 
+document.querySelector(".menu-btnOff").addEventListener("click", () => {
+    toggleClass(document.querySelector('.page1 .footer'), 'active');
+    toggleClass(document.querySelector(".menu"), 'menu_active');
+});
+
 document.querySelector(".monday").addEventListener("click", () => {
-    weekday.innerHTML = distributionList[1][0];
-    table1.remove('li');
-    days += 1;
+
+    renderDayBook(1);
 });
 document.querySelector(".tuesday").addEventListener("click", () => {
-    weekday.innerHTML = distributionList[2][0];
-    table1.remove('li');
-    renderDayBook();
+
+    renderDayBook(2);
 });
 document.querySelector(".wednesday").addEventListener("click", () => {
-    weekday.innerHTML = distributionList[3][0];
-    table1.remove('li');
-    renderDayBook();
+
+    renderDayBook(3);
 });
 document.querySelector(".thursday").addEventListener("click", () => {
-    weekday.innerHTML = distributionList[4][0];
-    table1.remove('li');
-    renderDayBook();
+
+    renderDayBook(4);
 });
 document.querySelector(".friday").addEventListener("click", () => {
-    weekday.innerHTML = distributionList[5][0];
-    table1.remove('li');
-    renderDayBook();
+
+    renderDayBook(5);
 });
