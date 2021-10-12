@@ -360,27 +360,27 @@ body {
 }
 
 .menu_active a:nth-child(1) {
-    transform: translate(-265%, -190%);
+    transform: translate(-290%, -190%);
 }
 
 .menu_active a:nth-child(2) {
-    transform: translate(-150%, -190%);
+    transform: translate(-175%, -190%);
 }
 
 .menu_active a:nth-child(3) {
-    transform: translate(-35%, -190%)
+    transform: translate(-60%, -190%)
 }
 
 .menu_active a:nth-child(4) {
-    transform: translate(80%, -190%);
+    transform: translate(55%, -190%);
 }
 
 .menu_active a:nth-child(5) {
-    transform: translate(195%, -190%);
+    transform: translate(170%, -190%);
 }
 
 .menu_active a:nth-child(6) {
-    transform: translate(310%, -190%);
+    transform: translate(300%, -190%);
 }
 
 @keyframes puls {
