@@ -30,8 +30,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     padding: 20px;
     background: var(--bg);
     border: var(--br);
@@ -266,8 +266,8 @@ body {
     border-style: solid;
     border-width: 2.5px;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     animation: puls 2s linear infinite;
     z-index: 99;
@@ -312,18 +312,18 @@ body {
     background: var(--bg);
     border: var(--br);
     border-radius: 50px;
-    width: 65px;
-    height: 65px;
+    width: 40px;
+    height: 40px;
     position: fixed;
     text-align: center;
     cursor: pointer;
     z-index: 0;
     transition: 0.3s;
     color: var(--c);
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration-line: none;
     font-family: "Quicksand", sans-serif;
-    font-weight: 550;
+    font-weight: 600;
     margin-top: 0px;
 }
 
@@ -360,27 +360,27 @@ body {
 }
 
 .menu_active a:nth-child(1) {
-    transform: translate(-275%, -200%);
+    transform: translate(-265%, -190%);
 }
 
 .menu_active a:nth-child(2) {
-    transform: translate(-160%, -200%);
+    transform: translate(-150%, -190%);
 }
 
 .menu_active a:nth-child(3) {
-    transform: translate(-45%, -200%)
+    transform: translate(-35%, -190%)
 }
 
 .menu_active a:nth-child(4) {
-    transform: translate(70%, -200%);
+    transform: translate(80%, -190%);
 }
 
 .menu_active a:nth-child(5) {
-    transform: translate(185%, -200%);
+    transform: translate(195%, -190%);
 }
 
 .menu_active a:nth-child(6) {
-    transform: translate(310%, -200%);
+    transform: translate(310%, -190%);
 }
 
 @keyframes puls {
@@ -388,12 +388,12 @@ body {
         box-shadow: 0 0 0 0 #fefefe, 0 0 0 0 #fefefe00;
     }
     40% {
-        box-shadow: 0 0 0 13px #fefefe00, 0 0 0 0 #fefefe00;
+        box-shadow: 0 0 0 3px #fefefe00, 0 0 0 0 #fefefe00;
     }
     80% {
-        box-shadow: 0 0 0 13px #fefefe00, 0 0 0 6px #fefefe00;
+        box-shadow: 0 0 0 3px #fefefe00, 0 0 0 3px #fefefe00;
     }
     100% {
-        box-shadow: 0 0 0 0 #fefefe00, 0 0 0 6px #fefefe00;
+        box-shadow: 0 0 0 0 #fefefe00, 0 0 0 3px #fefefe00;
     }
 }
