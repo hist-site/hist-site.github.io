@@ -32,7 +32,7 @@ body {
     align-items: center;
     width: 60px;
     height: 60px;
-    padding: 20px;
+    padding: 13px;
     background: var(--bg);
     border: var(--br);
     border-radius: 100px;
@@ -40,11 +40,11 @@ body {
 }
 
 .page1 .menu-btn:nth-child(1) {
-    padding: 5px 15px 15px 5px;
+    padding: 5px 10px 15px 5px;
 }
 
 .page1 .menu-btn:nth-child(3) {
-    padding: 13px;
+    padding: 7px;
 }
 
 .btn-img {
@@ -312,15 +312,15 @@ body {
     background: var(--bg);
     border: var(--br);
     border-radius: 50px;
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     position: fixed;
     text-align: center;
     cursor: pointer;
     z-index: 0;
     transition: 0.3s;
     color: var(--c);
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-decoration-line: none;
     font-family: "Quicksand", sans-serif;
     font-weight: 600;
