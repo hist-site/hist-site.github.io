@@ -24,6 +24,8 @@
 /* nav#wrapped-navbar | №1 */
 
 nav#wrapped-navbar {
+    background: map-get($colors, 'purple');
+    box-shadow: 0 3px 0 0 #3f0e95;
     >div {
         >ul {
             display: flex;
@@ -61,41 +63,43 @@ nav#wrapped-navbar {
                     @include unstyle(p);
                 }
                 &:hover a {
-                    box-shadow: 0 0 0 10px #202020;
+                    box-shadow: 0 3px 0 0 #3f0e95;
                     transform: translateY(30%);
                 }
                 &:hover p {
-                    bottom: -100%;
+                    bottom: -75%;
+                    box-shadow: 0 3px 0 0 #3f0e95;
                     opacity: 1;
+                    z-index: 3;
                 }
                 &::before {
                     content: "";
                     position: absolute;
-                    left: -60%;
-                    bottom: -23%;
-                    width: 20px;
-                    height: 24px;
+                    left: -18%;
+                    bottom: -5%;
+                    width: 12px;
+                    height: 12px;
                     pointer-events: none;
                     border-bottom-right-radius: 1000px;
-                    box-shadow: 20px 20px 0 20px transparent;
+                    box-shadow: 0 0 0 transparent;
                 }
                 &::after {
                     content: "";
                     position: absolute;
-                    right: -60%;
-                    bottom: -23%;
-                    width: 20px;
-                    height: 24px;
+                    right: -18%;
+                    bottom: -5%;
+                    width: 12px;
+                    height: 12px;
                     pointer-events: none;
                     border-bottom-left-radius: 1000px;
-                    box-shadow: -20px 20px 0 20px transparent;
+                    box-shadow: 0 0 0 transparent;
                 }
                 &:hover::before {
-                    box-shadow: 20px 20px 0 20px #202020;
+                    box-shadow: inset -3px -2px 0 0 #3f0e95, 3px 0 0 0 #3f0e95;
                     transition: .3s;
                 }
                 &:hover::after {
-                    box-shadow: -20px 20px 0 20px #202020;
+                    box-shadow: inset 3px -2px 0 0 #3f0e95, -3px 0 0 0 #3f0e95;
                     transition: .3s;
                 }
             }
