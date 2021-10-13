@@ -3,7 +3,7 @@
 ============================================================ */
 :root {
   /* background */
-  --w-default-bg-1: #4f11ba;
+  --w-default-bg-1: #fff;
   --w-default-bg-2: #202020;
   --w-default-bg-3: #292929;
   /* font */
@@ -16,6 +16,7 @@
 ::before,
 ::after {
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -77,7 +78,6 @@ body#wrapped-body > div > aside {
 }
 body#wrapped-body > div > main {
   width: 100%;
-  background-color: var(--w-body-bg-3);
 }
 body#wrapped-body > div > aside,
 body#wrapped-body > div main {
@@ -95,101 +95,56 @@ body#wrapped-body > div main > * {
 
 /* nav#wrapped-navbar
 ──────────────────────────────────────────────────────────── */
-/* nav#wrapped-navbar :root */
-:root {
-  /* color */
-  --w-navbar-c-1: #fff;
-  --w-navbar-c-2: #ffffffbb;
-  /* background */
-  --w-navbar-bg-1: #4f11ba;
-}
-
 /* nav#wrapped-navbar | №1 */
-nav#wrapped-navbar {
-  width: 100%;
-}
-nav#wrapped-navbar > div {
-  display: flex;
-  align-items: center;
-}
 nav#wrapped-navbar > div > ul {
-  display: flex;
-  margin: 0 0;
-  padding-left: 0;
-  list-style: none;
-}
-nav#wrapped-navbar > div > ul > li {
-  padding: 0.5rem;
-}
-nav#wrapped-navbar > div > ul > li > a {
-  transition: color 0.4s;
-  color: var(--w-navbar-c-2);
-  text-decoration: none;
-}
-nav#wrapped-navbar > div > ul > li > a:hover {
-  color: var(--w-navbar-c-1);
-}
-nav#wrapped-navbar > div > ul > li > a.active {
-  color: var(--w-navbar-c-1);
-  font-weight: 600;
-}
-
-/* nav#wrapped-navbar | №2 */
-nav#wrapped-navbar > div > a {
-  color: var(--w-navbar-c-1);
-  font-size: 2.5625rem;
-  text-decoration: none;
-}
-/* nav#wrapped-navbar#v2 | №3 */
-nav#wrapped-navbar[date-w-version="2"] > div > ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  color: var(--w-navbar-c-1);
   font-size: 1.2rem;
   margin: 0 0;
   padding-left: 0;
   list-style: none;
 }
-nav#wrapped-navbar[date-w-version="2"] > div > ul > li {
+nav#wrapped-navbar > div > ul > li {
   position: relative;
   display: flex;
   justify-content: center;
   padding: 0;
 }
-nav#wrapped-navbar[date-w-version="2"] > div > ul > li a {
+nav#wrapped-navbar > div > ul > li a {
   display: flex;
   padding: 5px;
   font-size: 2.5rem;
-  background: var(--w-navbar-bg-1);
+  color: #d1d1d1;
+  background: #4f11ba;
   border-radius: 1000px;
   transition: 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   z-index: 3;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
-nav#wrapped-navbar[date-w-version="2"] > div > ul > li p {
+nav#wrapped-navbar > div > ul > li p {
   position: absolute;
   bottom: -95%;
   padding: 3px 10px;
   font-weight: 500;
-  background: var(--w-navbar-bg-1);
+  background: #4f11ba;
   border-radius: 1000px;
   pointer-events: none;
-  transition: 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   z-index: 2;
   opacity: 0;
   margin: 0;
 }
-nav#wrapped-navbar[date-w-version="2"] > div > ul > li:hover a {
-  color: var(--w-navbar-c-1);
+nav#wrapped-navbar > div > ul > li:hover a {
   box-shadow: 0 0 0 10px #202020;
   transform: translateY(30%);
 }
-nav#wrapped-navbar[date-w-version="2"] > div > ul > li:hover p {
+nav#wrapped-navbar > div > ul > li:hover p {
   bottom: -100%;
   opacity: 1;
 }
-nav#wrapped-navbar[date-w-version="2"] > div > ul > li::before {
+nav#wrapped-navbar > div > ul > li::before {
   content: "";
   position: absolute;
   left: -60%;
@@ -199,9 +154,8 @@ nav#wrapped-navbar[date-w-version="2"] > div > ul > li::before {
   pointer-events: none;
   border-bottom-right-radius: 1000px;
   box-shadow: 20px 20px 0 20px transparent;
-  transition: 0.05s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
-nav#wrapped-navbar[date-w-version="2"] > div > ul > li::after {
+nav#wrapped-navbar > div > ul > li::after {
   content: "";
   position: absolute;
   right: -60%;
@@ -211,11 +165,26 @@ nav#wrapped-navbar[date-w-version="2"] > div > ul > li::after {
   pointer-events: none;
   border-bottom-left-radius: 1000px;
   box-shadow: -20px 20px 0 20px transparent;
-  transition: 0.05s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
-nav#wrapped-navbar[date-w-version="2"] > div > ul > li:hover::before {
+nav#wrapped-navbar > div > ul > li:hover::before {
   box-shadow: 20px 20px 0 20px #202020;
+  transition: 0.3s;
 }
-nav#wrapped-navbar[date-w-version="2"] > div > ul > li:hover::after {
+nav#wrapped-navbar > div > ul > li:hover::after {
   box-shadow: -20px 20px 0 20px #202020;
+  transition: 0.3s;
+}
+nav#wrapped-navbar > div > ul > li.active a {
+  box-shadow: none;
+}
+nav#wrapped-navbar > div > ul > li.active p {
+  box-shadow: 0 3px 0 0 #3f0e95;
+  opacity: 1;
+  bottom: -50%;
+}
+nav#wrapped-navbar > div > ul > li.active:hover a, nav#wrapped-navbar > div > ul > li.active:hover p {
+  transform: none;
+}
+nav#wrapped-navbar > div > ul > li.active::before, nav#wrapped-navbar > div > ul > li.active::after {
+  display: none;
 }

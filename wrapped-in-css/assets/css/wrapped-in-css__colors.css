@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* colors
+──────────────────────────────────────────────────────────── */
+.white-100 {
+  background: #dadada;
+}
+
+.white-200 {
+  background: #d1d1d1;
+}
+
+.white-300 {
+  background: #a7a7a7;
+}
+
+.black-100 {
+  background: #4d4d4d;
+}
+
+.black-200 {
+  background: #202020;
+}
+
+.black-300 {
+  background: #1a1a1a;
+}
+
+.purple-100 {
+  background: #7241c8;
+}
+
+.purple-200 {
+  background: #4f11ba;
+}
+
+.purple-300 {
+  background: #3f0e95;
+}

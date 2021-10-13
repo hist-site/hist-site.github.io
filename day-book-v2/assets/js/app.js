@@ -18,7 +18,6 @@ const distributionList = [
 ]
 
 const timeList = [
-
     ['8:30 - 9:15'],
     ['9:25 - 10:10'],
     ['10:30 - 11:15'],
