@@ -24,86 +24,76 @@ body {
   font-family: var(--system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji);
 }
 
-/* body#wrapped-body
+/* body.wrapped-body
 ──────────────────────────────────────────────────────────── */
-/* body#wrapped-body :root */
-:root {
-  /* color */
-  --w-body-c-1: #fff;
-  /* background */
-  --w-body-bg-1: #202020;
-  --w-body-bg-2: #4f11ba;
-  --w-body-bg-3: #292929;
+/* body.wrapped-body | container */
+body.wrapped-body {
+  background: #202020;
+}
+body.wrapped-body > * {
+  width: 100%;
+  margin: 0 auto;
+}
+body.wrapped-body.sm > * {
+  max-width: 640px;
+  margin: 0 auto;
 }
 
-/* body#wrapped-body | №1 */
-body#wrapped-body {
+/* body.wrapped-body | №1 */
+body.wrapped-body {
   color: var(--w-body-c-1);
   font-size: 1rem;
   background-color: var(--w-body-bg-1);
 }
-body#wrapped-body > header,
-body#wrapped-body > main,
-body#wrapped-body > footer {
+body.wrapped-body > header,
+body.wrapped-body > main,
+body.wrapped-body > footer {
   width: 100%;
 }
-body#wrapped-body > header > *,
-body#wrapped-body > main > *,
-body#wrapped-body > footer > * {
+body.wrapped-body > header > *,
+body.wrapped-body > main > *,
+body.wrapped-body > footer > * {
   width: 100%;
   margin: 0 auto;
   padding: 0 0.75rem;
 }
-@media (min-width: 1400px) {
-  body#wrapped-body > header > *,
-body#wrapped-body > main > *,
-body#wrapped-body > footer > * {
-    max-width: 1380px;
-  }
-}
-body#wrapped-body > header,
-body#wrapped-body > footer {
+body.wrapped-body > header,
+body.wrapped-body > footer {
   background: var(--w-body-bg-2);
 }
-body#wrapped-body > header {
+body.wrapped-body > header {
   margin-bottom: 0.75rem;
   box-shadow: 0 3px 0 0 #3f0e95;
 }
 
-/* #wrapped-body | №2 */
-body#wrapped-body > div {
+/* .wrapped-body | №2 */
+body.wrapped-body > div {
   display: flex;
   width: 100%;
   margin: 0 auto;
 }
-body#wrapped-body > div > aside {
+body.wrapped-body > div > aside {
   width: 15%;
 }
-body#wrapped-body > div > main {
+body.wrapped-body > div > main {
   width: 100%;
 }
-body#wrapped-body > div > aside,
-body#wrapped-body > div main {
+body.wrapped-body > div > aside,
+body.wrapped-body > div main {
   padding: 0.75rem 0;
 }
-body#wrapped-body > div > aside > *,
-body#wrapped-body > div main > * {
+body.wrapped-body > div > aside > *,
+body.wrapped-body > div main > * {
   padding: 0 0.75rem;
 }
-@media (min-width: 1400px) {
-  body#wrapped-body > div {
-    max-width: 1380px;
-  }
-}
 
-/* nav#wrapped-navbar
+/* nav.wrapped-navbar
 ──────────────────────────────────────────────────────────── */
-/* nav#wrapped-navbar | №1 */
-nav#wrapped-navbar {
-  background: #4f11ba;
+/* nav.wrapped-navbar | №1 */
+nav.wrapped-navbar {
   box-shadow: 0 3px 0 0 #3f0e95;
 }
-nav#wrapped-navbar > div > ul {
+nav.wrapped-navbar > div > ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -112,30 +102,27 @@ nav#wrapped-navbar > div > ul {
   padding-left: 0;
   list-style: none;
 }
-nav#wrapped-navbar > div > ul > li {
+nav.wrapped-navbar > div > ul > li {
   position: relative;
   display: flex;
   justify-content: center;
   padding: 0;
 }
-nav#wrapped-navbar > div > ul > li a {
+nav.wrapped-navbar > div > ul > li a {
   display: flex;
   padding: 5px;
   font-size: 2.5rem;
-  color: #d1d1d1;
-  background: #4f11ba;
   border-radius: 1000px;
   transition: 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   z-index: 3;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
-nav#wrapped-navbar > div > ul > li p {
+nav.wrapped-navbar > div > ul > li p {
   position: absolute;
   bottom: -95%;
   padding: 3px 10px;
   font-weight: 500;
-  background: #4f11ba;
   border-radius: 1000px;
   pointer-events: none;
   transition: 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
@@ -143,17 +130,17 @@ nav#wrapped-navbar > div > ul > li p {
   opacity: 0;
   margin: 0;
 }
-nav#wrapped-navbar > div > ul > li:hover a {
+nav.wrapped-navbar > div > ul > li:hover a {
   box-shadow: 0 3px 0 0 #3f0e95;
   transform: translateY(30%);
 }
-nav#wrapped-navbar > div > ul > li:hover p {
+nav.wrapped-navbar > div > ul > li:hover p {
   bottom: -75%;
   box-shadow: 0 3px 0 0 #3f0e95;
   opacity: 1;
   z-index: 3;
 }
-nav#wrapped-navbar > div > ul > li::before {
+nav.wrapped-navbar > div > ul > li::before {
   content: "";
   position: absolute;
   left: -18%;
@@ -164,7 +151,7 @@ nav#wrapped-navbar > div > ul > li::before {
   border-bottom-right-radius: 1000px;
   box-shadow: 0 0 0 transparent;
 }
-nav#wrapped-navbar > div > ul > li::after {
+nav.wrapped-navbar > div > ul > li::after {
   content: "";
   position: absolute;
   right: -18%;
@@ -175,25 +162,25 @@ nav#wrapped-navbar > div > ul > li::after {
   border-bottom-left-radius: 1000px;
   box-shadow: 0 0 0 transparent;
 }
-nav#wrapped-navbar > div > ul > li:hover::before {
+nav.wrapped-navbar > div > ul > li:hover::before {
   box-shadow: inset -3px -2px 0 0 #3f0e95, 3px 0 0 0 #3f0e95;
   transition: 0.3s;
 }
-nav#wrapped-navbar > div > ul > li:hover::after {
+nav.wrapped-navbar > div > ul > li:hover::after {
   box-shadow: inset 3px -2px 0 0 #3f0e95, -3px 0 0 0 #3f0e95;
   transition: 0.3s;
 }
-nav#wrapped-navbar > div > ul > li.active a {
+nav.wrapped-navbar > div > ul > li.active a {
   box-shadow: none;
 }
-nav#wrapped-navbar > div > ul > li.active p {
+nav.wrapped-navbar > div > ul > li.active p {
   box-shadow: 0 3px 0 0 #3f0e95;
   opacity: 1;
   bottom: -50%;
 }
-nav#wrapped-navbar > div > ul > li.active:hover a, nav#wrapped-navbar > div > ul > li.active:hover p {
+nav.wrapped-navbar > div > ul > li.active:hover a, nav.wrapped-navbar > div > ul > li.active:hover p {
   transform: none;
 }
-nav#wrapped-navbar > div > ul > li.active::before, nav#wrapped-navbar > div > ul > li.active::after {
+nav.wrapped-navbar > div > ul > li.active::before, nav.wrapped-navbar > div > ul > li.active::after {
   display: none;
 }

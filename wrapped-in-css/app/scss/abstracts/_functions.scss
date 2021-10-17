@@ -5,3 +5,11 @@
 @function shade($color, $percentage) {
     @return mix(black, $color, $percentage);
 }
+
+@function widthBreakpoints() {
+    @each $sizeName,
+    $size in $width-breakpoints {
+        @return $sizeName,
+        $size
+    }
+}

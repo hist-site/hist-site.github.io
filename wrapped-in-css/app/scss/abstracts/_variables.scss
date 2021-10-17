@@ -1,15 +1,12 @@
-// variables //
-$colors: ( //
-'white': #d1d1d1, //
-'black': #202020, //
-'purple': #4f11ba, //
-);
-$colors-level: ( //
-100, //
-200, //
-300 //
-);
+// variables
 //
+//
+// color
+$colors: ( //
+white: #d1d1d1, black: #202020, purple: #4f11ba, );
+//
+//
+// font
 $font-family-sans-serif: system-ui,
 -apple-system,
 "Segoe UI",
@@ -23,3 +20,14 @@ sans-serif,
 "Segoe UI Emoji",
 "Segoe UI Symbol",
 "Noto Color Emoji" !default;
+//
+//
+// breakpoints
+// ────────────────────────────────────────────────────────────
+// 
+// color
+$colors-breakpoints: ( 100, 200, 300);
+//
+//
+// width
+$width-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);

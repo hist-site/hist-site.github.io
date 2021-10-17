@@ -1,28 +1,16 @@
-/* body#wrapped-body
+/* body.wrapped-body
 ──────────────────────────────────────────────────────────── */
-
-
-/* body#wrapped-body :root */
-
-:root {
-    /* color */
-    --w-body-c-1: #fff;
-    /* background */
-    --w-body-bg-1: #202020;
-    --w-body-bg-2: #4f11ba;
-    --w-body-bg-3: #292929;
-}
 
 //  ! ─ Нужно для нормальной работы;
 //  ? ─ Не обязательно в использовании;
 //  + ─ Измененная конструкция
 // ────────────────────────────────────────────────────────────
-//  body#wrapped-body | №1
+//  body.wrapped-body | №1
 //      ┌──────────────────────────────────────────────┐
 //      | !! Правильная структура для использования !! |
 //      └──────────────────────────────────────────────┘
 //
-//                    ! body#wrapped-body
+//                    ! body.wrapped-body
 //                      |
 //                    ? ├── header
 //                      | ! └── *
@@ -37,9 +25,49 @@
 //
 //
 
-/* body#wrapped-body | №1 */
+/* body.wrapped-body | container */
 
-body#wrapped-body {
+body.wrapped-body {
+    background: #202020;
+    >* {
+        width: 100%;
+        margin: 0 auto;
+    }
+    &.sm {
+        >* {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+    }
+}
+
+//  ! ─ Нужно для нормальной работы;
+//  ? ─ Не обязательно в использовании;
+//  + ─ Измененная конструкция
+// ────────────────────────────────────────────────────────────
+//  body.wrapped-body | №1
+//      ┌──────────────────────────────────────────────┐
+//      | !! Правильная структура для использования !! |
+//      └──────────────────────────────────────────────┘
+//
+//                    ! body.wrapped-body
+//                      |
+//                    ? ├── header
+//                      | ! └── *
+//                      |
+//                    ? ├── main
+//                      | ! └── *
+//                      |
+//                    ? └── footer
+//                        ! └── * 
+//
+// ────────────────────────────────────────────────────────────
+//
+//
+
+/* body.wrapped-body | №1 */
+
+body.wrapped-body {
     color: var(--w-body-c-1);
     font-size: 1rem;
     background-color: var(--w-body-bg-1);
@@ -52,9 +80,9 @@ body#wrapped-body {
             width: 100%;
             margin: 0 auto;
             padding: 0 .75rem;
-            @media (min-width: 1400px) {
-                max-width: 1380px;
-            }
+            // @media (min-width: 1400px) {
+            //     max-width: 1380px;
+            // }
         }
     }
     >header,
@@ -71,12 +99,12 @@ body#wrapped-body {
 //  * ─ Не обязательно в использовании;
 //  + ─ Измененная конструкция
 // ────────────────────────────────────────────────────────────
-//  #wrapped-body | №2
+//  .wrapped-body | №2
 //      ┌──────────────────────────────────────────────┐
 //      | !! Правильная структура для использования !! |
 //      └──────────────────────────────────────────────┘
 //
-//                    ! body#wrapped-body
+//                    ! body.wrapped-body
 //                      |
 //                    ? ├── header
 //                      | ! └── *
@@ -95,9 +123,9 @@ body#wrapped-body {
 //
 //
 
-/* #wrapped-body | №2 */
+/* .wrapped-body | №2 */
 
-body#wrapped-body {
+body.wrapped-body {
     >div {
         display: flex;
         width: 100%;
@@ -115,8 +143,8 @@ body#wrapped-body {
                 padding: 0 .75rem;
             }
         }
-        @media (min-width: 1400px) {
-            max-width: 1380px;
-        }
+        // @media (min-width: 1400px) {
+        //     max-width: 1380px;
+        // }
     }
 }

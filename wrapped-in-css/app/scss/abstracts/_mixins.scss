@@ -5,7 +5,7 @@
 @mixin colorMap($list) {
     @each $colorKey,
     $color in $list {
-        @each $listKey in $colors-level {
+        @each $listKey in $colors-breakpoints {
             @if $listKey<200 {
                 .#{$colorKey}-#{$listKey} {
                     background: tint($color, 20%)
