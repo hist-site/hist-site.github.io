@@ -1,6 +1,7 @@
 @font-face {
     font-family: "wrapped-icons";
     src: url("./fonts/wrapped-icons.woff?a4f2f529cb5d896418734e088b85fed8") format("woff"), url("./fonts/wrapped-icons.woff2?a4f2f529cb5d896418734e088b85fed8") format("woff2");
+    font-display: swap;
 }
 
 [class^="w-"]::before,
@@ -8,6 +9,7 @@
     display: inline-block;
     font-family: wrapped-icons !important;
     font-style: normal;
+    font-display: swap;
     font-weight: normal !important;
     font-variant: normal;
     text-transform: none;

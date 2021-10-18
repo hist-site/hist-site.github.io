@@ -3,10 +3,11 @@
 
 @import '../../abstracts/variables';
 :root {
+    /* color */
+    --w-dafault-c-1: #ffffff;
     /* background */
-    --w-default-bg-1: #fff;
-    --w-default-bg-2: #202020;
-    --w-default-bg-3: #292929;
+    --w-default-bg-1: #202020;
+    --w-default-bg-2: #4f11ba;
     /* font */
-    --w-font-family-sans-serif: $font-family-sans-serif
+    --w-font-family-sans-serif: #{$font-family-sans-serif};
 }

@@ -2,12 +2,13 @@
 /* root
 ============================================================ */
 :root {
+  /* color */
+  --w-dafault-c-1: #ffffff;
   /* background */
-  --w-default-bg-1: #fff;
-  --w-default-bg-2: #202020;
-  --w-default-bg-3: #292929;
+  --w-default-bg-1: #202020;
+  --w-default-bg-2: #4f11ba;
   /* font */
-  --w-font-family-sans-serif: $font-family-sans-serif ;
+  --w-font-family-sans-serif: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 /* normalize
@@ -21,29 +22,29 @@
 
 body {
   margin: 0;
-  font-family: var(--system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji);
+  font-family: var(--w-font-family-sans-serif);
 }
 
 /* body.wrapped-body
 ──────────────────────────────────────────────────────────── */
 /* body.wrapped-body | container */
 body.wrapped-body {
-  background: #202020;
+  background: var(--w-default-bg-1);
 }
 body.wrapped-body > * {
   width: 100%;
   margin: 0 auto;
 }
-body.wrapped-body.sm > * {
-  max-width: 640px;
-  margin: 0 auto;
+@media (max-width: 640px) {
+  body.wrapped-body.sm > * > * {
+    max-width: 640px;
+    margin: 0 auto;
+  }
 }
 
 /* body.wrapped-body | №1 */
 body.wrapped-body {
-  color: var(--w-body-c-1);
   font-size: 1rem;
-  background-color: var(--w-body-bg-1);
 }
 body.wrapped-body > header,
 body.wrapped-body > main,
@@ -59,7 +60,7 @@ body.wrapped-body > footer > * {
 }
 body.wrapped-body > header,
 body.wrapped-body > footer {
-  background: var(--w-body-bg-2);
+  background: var(--w-default-bg-2);
 }
 body.wrapped-body > header {
   margin-bottom: 0.75rem;
@@ -91,6 +92,7 @@ body.wrapped-body > div main > * {
 ──────────────────────────────────────────────────────────── */
 /* nav.wrapped-navbar | №1 */
 nav.wrapped-navbar {
+  background: var(--w-default-bg-2);
   box-shadow: 0 3px 0 0 #3f0e95;
 }
 nav.wrapped-navbar > div > ul {
@@ -107,11 +109,14 @@ nav.wrapped-navbar > div > ul > li {
   display: flex;
   justify-content: center;
   padding: 0;
+  color: var(--w-dafault-c-1);
 }
 nav.wrapped-navbar > div > ul > li a {
   display: flex;
   padding: 5px;
+  color: inherit;
   font-size: 2.5rem;
+  background: var(--w-default-bg-2);
   border-radius: 1000px;
   transition: 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   z-index: 3;
@@ -123,6 +128,7 @@ nav.wrapped-navbar > div > ul > li p {
   bottom: -95%;
   padding: 3px 10px;
   font-weight: 500;
+  background: var(--w-default-bg-2);
   border-radius: 1000px;
   pointer-events: none;
   transition: 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
