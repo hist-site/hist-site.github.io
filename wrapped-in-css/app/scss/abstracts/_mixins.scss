@@ -33,9 +33,22 @@
     }
     @else if $tag==a {
         text-decoration: none;
-        -webkit-tap-highlight-color: transparent;
     }
     @else if $tag==p {
         margin: 0;
+    }
+}
+
+@mixin widthBreakpoints {
+    @each $widthKey,
+    $width in $width-breakpoints {
+        &.#{$widthKey} {
+            >*>* {
+                @media (max-width: $width) {
+                    max-width: $width;
+                    margin: 0 auto;
+                }
+            }
+        }
     }
 }

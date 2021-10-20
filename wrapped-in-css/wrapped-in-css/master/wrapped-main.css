@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* main
+──────────────────────────────────────────────────────────── */
+/* root
+──────────────────────────────────────────────────────────── */
+:root {
+  /* color */
+  --w-dafault-c-1: #ffffff;
+  /* background */
+  --w-default-bg-1: #202020;
+  --w-default-bg-2: #4f11ba;
+  /* font */
+  --w-font-family-sans-serif: system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+/* normalize
+──────────────────────────────────────────────────────────── */
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: var(--w-font-family-sans-serif);
+  -webkit-tap-highlight-color: transparent;
+}

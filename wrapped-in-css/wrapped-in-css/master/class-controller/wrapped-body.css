@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* body.wrapped-body
+──────────────────────────────────────────────────────────── */
+/* body.wrapped-body | container */
+body.wrapped-body {
+  background: var(--w-default-bg-1);
+}
+body.wrapped-body > * {
+  width: 100%;
+}
+body.wrapped-body > * > * {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+}
+
+/* body.wrapped-body | №1 */
+body.wrapped-body {
+  font-size: 1rem;
+}
+body.wrapped-body > header > *,
+body.wrapped-body > main > *,
+body.wrapped-body > footer > * {
+  color: var(--w-dafault-c-1);
+}
+body.wrapped-body > header,
+body.wrapped-body > footer {
+  background: var(--w-default-bg-2);
+}
+body.wrapped-body > header {
+  margin-bottom: 0.75rem;
+  -webkit-box-shadow: 0 3px 0 0 #3f0e95;
+          box-shadow: 0 3px 0 0 #3f0e95;
+}
+
+/* .wrapped-body | №2 */
+body.wrapped-body > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+body.wrapped-body > div > aside {
+  width: 15%;
+}
+body.wrapped-body > div > main {
+  width: 100%;
+}
+body.wrapped-body > div > aside,
+body.wrapped-body > div main {
+  padding: 0.75rem 0;
+}
+body.wrapped-body > div > aside > *,
+body.wrapped-body > div main > * {
+  padding: 0 0.75rem;
+}
