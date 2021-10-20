@@ -1,7 +1,14 @@
 export function fileHandler(db) {
     var http = new XMLHttpRequest();
-    http.open('GET', db.src, true);
-    if (http.send) {
-        return db.src;
-    } else return db.href;
+
+    try {
+        http.open('GET', db.src, false);
+        http.send();
+        return (http.status != 200) ? db.href : db.src;
+    } catch {
+        console.log('asd');
+    }
+
+
+
 }
