@@ -1,6 +1,6 @@
 @font-face {
     font-family: "wrapped-icons";
-    src: url("./fonts/wrapped-icons.woff?a4f2f529cb5d896418734e088b85fed8") format("woff"), url("./fonts/wrapped-icons.woff2?a4f2f529cb5d896418734e088b85fed8") format("woff2");
+    src: url("./font/wrapped-icons.woff?a4f2f529cb5d896418734e088b85fed8") format("woff"), url("./font/wrapped-icons.woff2?a4f2f529cb5d896418734e088b85fed8") format("woff2");
     font-display: swap;
 }
 
