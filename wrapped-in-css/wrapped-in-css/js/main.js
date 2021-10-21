@@ -7,7 +7,8 @@ function addLocalStyleSheets() {
             const $head = document.head,
                 $link = document.createElement('link');
             $link.rel = 'stylesheet';
-            $link.href = fileHandler(db[key][id]);
+            fileHandler(db[key][id])
+                .then(url => $link.href = url)
             $head.appendChild($link);
         }
     }
