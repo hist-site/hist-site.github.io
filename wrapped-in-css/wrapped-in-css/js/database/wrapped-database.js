@@ -2,7 +2,7 @@ export const wrapped_database = {
     master: {
         main: {
             name: 'wrapped-main',
-            src: './wrapped-in-css/css/master/wrapped-main.css',
+            src: './wrapped-in-css/ss/master/wrapped-main.css',
             href: 'https://hist-site.github.io/wrapped-in-css/wrapped-in-css/css/master/wrapped-main.css',
         },
         class_controller: {
