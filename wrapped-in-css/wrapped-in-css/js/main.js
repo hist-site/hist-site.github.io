@@ -1,10 +1,10 @@
 import { wrapped_database as db, wrapped_database_addons as dba } from "./database/database.js";
 import { fileHandler } from "./database/database-control.js";
-// import {wrapped_options as option} from './wrapped-options.js'
 import { addClassController } from "./class-controller.js";
-import { wPreloader } from "./addons/preloader.js";
+import { wPreloader, wPreloaderDisabled } from "./addons/preloader.js";
 
-document.addEventListener('DOMContentLoaded', addStyleSheets());
+wPreloader();
+wPreloaderDisabled();
 
 function addStyleSheets() {
     for (const key in db) {
@@ -19,5 +19,5 @@ function addStyleSheets() {
     }
 }
 
-addClassController()
-wPreloader();
+addStyleSheets();
+addClassController();

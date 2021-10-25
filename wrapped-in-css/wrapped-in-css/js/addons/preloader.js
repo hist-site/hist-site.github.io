@@ -13,3 +13,9 @@ export function wPreloader() {
 
     }
 }
+
+export function wPreloaderDisabled() {
+    const preloder = document.querySelector(`.${dba.preloader.keyWord}`);
+    preloder.classList.add('disabled');
+    setTimeout(() => preloder.remove(), 1000)
+}
