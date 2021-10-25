@@ -1,7 +1,8 @@
-import { wrapped_database as db } from "./database/database.js";
+import { wrapped_database as db, wrapped_database_addons as dba } from "./database/database.js";
 import { fileHandler } from "./database/database-control.js";
 // import {wrapped_options as option} from './wrapped-options.js'
 import { addClassController } from "./class-controller.js";
+import { wPreloader } from "./addons/preloader.js";
 
 document.addEventListener('DOMContentLoaded', addStyleSheets());
 
@@ -19,3 +20,4 @@ function addStyleSheets() {
 }
 
 addClassController()
+wPreloader();

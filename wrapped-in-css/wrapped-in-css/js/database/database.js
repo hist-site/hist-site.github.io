@@ -1,3 +1,15 @@
+import { wrapped_options } from "../wrapped-options.js"
+
+export const wrapped_database_addons = {
+    preloader: {
+        name: 'wrapped-preloader',
+        src: './wrapped-in-css/css/addons/preloader.css',
+        href: 'https://hist-site.github.io/wrapped-in-css/wrapped-in-css/css/addons/preloader.css',
+        keyWord: 'wrapped-preloader',
+        use: (wrapped_options.addons.preloader) ? true : false
+    }
+}
+
 export const wrapped_database = {
     master: {
         main: {
