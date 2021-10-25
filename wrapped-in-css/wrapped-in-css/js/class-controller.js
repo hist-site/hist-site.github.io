@@ -1,21 +1,22 @@
 import { wrapped_database as db } from "./database/database.js";
 import { fileHandler } from "./database/database-control.js";
-// import {wrapped_options as option} from './wrapped-options.js'
-import { addClassController } from "./class-controller.js";
 
-document.addEventListener('DOMContentLoaded', addStyleSheets());
+function searchClassController(keys) {
+    if (document.querySelector(db.class_controller[keys].keyWord)) {
+        return true;
+    }
 
-function addStyleSheets() {
-    for (const key in db) {
-        for (const id in db[key]) {
+}
+
+export function addClassController() {
+    for (const id in db.class_controller) {
+        if (searchClassController(id)) {
             const $head = document.head,
                 $link = document.createElement('link');
             $link.rel = 'stylesheet';
-            fileHandler(db[key][id])
+            fileHandler(db.class_controller[id])
                 .then(url => $link.href = url)
             $head.appendChild($link);
         }
     }
 }
-
-addClassController()
